@@ -1,0 +1,25 @@
+{
+  "name": "appvelox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-sass": "^4.0.2"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": [
+    "ie > 8",
+    "firefox > 60",
+    "chrome > 70",
+    "safari > 8",
+    "edge > 38"
+  ]
+}
