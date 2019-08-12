@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  font-weight: inherit;
 }
 
 html {
@@ -12,4 +13,86 @@ html {
 
 body {
   box-sizing: border-box;
+  font-weight: 500;
+  font-family: serif;
+  letter-spacing: 1px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.header {
+  height: 100px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  color: black;
+  border-bottom: 1px solid #dddddd;
+  box-shadow: 0 3px 8px #dddddd;
+}
+
+.header__main {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-left: 30px;
+}
+
+.header__main__logo {
+  margin-right: 25px;
+}
+
+.header__main__logo:hover {
+  cursor: pointer;
+}
+
+.header__main__switcher {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header__main__switcher-border {
+  border-right: 1px solid #a7b1b7;
+}
+
+.header__main__switcher-deactivate {
+  color: #606474;
+  margin-bottom: 3px;
+}
+
+.header__menu {
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 30px;
+}
+
+.header__menu__text {
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header__menu__button {
+  background-color: #7cba30;
+  padding: 20px 35px;
+  color: white;
+  border-radius: 5px;
+  font-size: initial;
+  text-decoration: none;
+  margin-left: 15px;
 }

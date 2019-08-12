@@ -2,15 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="stylesheet/main.css" rel="stylesheet">
     <title>Понимаю</title>
 </head>
 <body>
 
-<header>
-    <div>
-        <img src="images/logo.svg" alt="Company logotype">
-        <h3>Частным лицам</h3>
-        <h3>Бизнесу</h3>
+<header class="header">
+    <div class="header__main">
+        <img class="header__main__logo" src="images/logo.svg" alt="Company logotype" onClick="window.location.reload()">
+        <h3 class="header__main__switcher header__main__switcher-border"><a href="#">Частным лицам</a></h3>
+        <h3 class="header__main__switcher header__main__switcher-deactivate"><a href="#">Бизнесу</a></h3>
+    </div>
+    <div class="header__menu">
+        <h3 class="header__menu__text"><a href="#">Услуги</a></h3>
+        <h3 class="header__menu__text"><a href="#">О нас</a></h3>
+        <h3 class="header__menu__text"><a href="#">Блог</a></h3>
+        <h3 class="header__menu__text"><a href="questions.html">Вопросы</a></h3>
+        <h3 class="header__menu__text"><a href="#">Контакты</a></h3>
+        <a class="header__menu__button" href="#">Задать вопрос</a>
     </div>
 </header>
 

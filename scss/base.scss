@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  font-weight: inherit;
 }
 
 html {
@@ -12,4 +13,20 @@ html {
 
 body {
   box-sizing: border-box;
+  font-weight: 500;
+  font-family: serif;
+  letter-spacing: 1px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+h3 {
+  font-size: 1.5rem;
 }
