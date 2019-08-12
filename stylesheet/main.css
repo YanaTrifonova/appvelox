@@ -310,3 +310,44 @@ hr {
   margin-top: 40px;
   margin-bottom: 20px;
 }
+
+.blog {
+  width: 1000px;
+  margin: 0 auto 60px auto;
+}
+
+.blog__navigation {
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.blog__container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.blog__container__section {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blog__container__section__text {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.blog__container__section__text__header {
+  margin-bottom: 15px;
+}
+
+.blog__container__section__text__description {
+  color: #606474;
+}

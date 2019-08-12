@@ -1,0 +1,46 @@
+.blog {
+  width: 1000px;
+  margin: 0 auto 60px auto;
+
+  &__navigation {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+
+    &__header {
+
+    }
+
+    &__allArticles {
+
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    &__section {
+      display: flex;
+
+      &__img {
+
+      }
+
+      &__text {
+        margin-left: 20px;
+        margin-right: 20px;
+
+        &__header {
+          margin-bottom: 15px;
+        }
+
+        &__description {
+          color: $font-subscription;
+        }
+      }
+    }
+  }
+}
