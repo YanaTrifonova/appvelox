@@ -1,0 +1,35 @@
+.specialist {
+
+  &__card {
+    margin: 70px;
+    text-align: center;
+
+    &__img {
+      border-radius: 50%;
+      height: 100px;
+      width: 100px;
+      margin-bottom: 30px;
+    }
+
+    &__position {
+      margin-bottom: 10px;
+      color: $font-subscription;
+    }
+
+    &__name {
+      margin-bottom: 20px;
+    }
+
+    &__description {
+      margin-bottom: 10px;
+      color: $font-subscription;
+    }
+  }
+
+  &__pagination {
+    position: relative !important;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+}
+
