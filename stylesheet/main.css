@@ -351,3 +351,24 @@ hr {
 .blog__container__section__text__description {
   color: #606474;
 }
+
+.trustUs {
+  background-color: #f6f5f5;
+  padding-bottom: 60px;
+}
+
+.trustUs__header {
+  text-align: center;
+  margin-bottom: 60px;
+  padding-top: 60px;
+}
+
+.trustUs__container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.trustUs__container__img {
+  height: 70px;
+  margin-right: 30px;
+}

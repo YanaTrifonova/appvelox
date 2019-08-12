@@ -1,0 +1,20 @@
+.trustUs {
+  background-color: $color-extraLight;
+  padding-bottom: 60px;
+
+  &__header {
+    text-align: center;
+    margin-bottom: 60px;
+    padding-top: 60px;
+  }
+
+  &__container {
+    width: 1000px;
+    margin: 0 auto;
+
+    &__img {
+      height: 70px;
+      margin-right: 30px;
+    }
+  }
+}
