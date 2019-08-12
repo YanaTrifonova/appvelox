@@ -13,9 +13,8 @@ html {
 
 body {
   box-sizing: border-box;
-  font-weight: 500;
-  font-family: serif;
-  letter-spacing: 1px;
+  font-family: Roboto,Arial,sans-serif;
+  font-weight: 400;
 }
 
 a {
@@ -25,6 +24,10 @@ a {
   &:hover {
     text-decoration: underline;
   }
+}
+
+h1 {
+  font-size: 4rem;
 }
 
 h3 {

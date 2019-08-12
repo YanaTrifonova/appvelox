@@ -1,0 +1,35 @@
+.aboutUs {
+  background-image: url("../images/illustrations/main.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: auto;
+  background-size: cover;
+  padding-bottom: 50px;
+  padding-top: 90px;
+  display: flex;
+
+  &__content {
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+
+    &__header {
+      padding-bottom: 15px;
+      color: $font-main;
+    }
+
+    &__subscription {
+      padding-bottom: 60px;
+      color: $font-subscription;
+      line-height: 20px;
+    }
+
+    &__button {
+      @include button;
+
+      &:focus {
+        background-color: $button-green-change;
+      }
+    }
+  }
+}

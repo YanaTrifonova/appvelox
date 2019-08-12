@@ -13,9 +13,8 @@ html {
 
 body {
   box-sizing: border-box;
-  font-weight: 500;
-  font-family: serif;
-  letter-spacing: 1px;
+  font-family: Roboto,Arial,sans-serif;
+  font-weight: 400;
 }
 
 a {
@@ -25,6 +24,10 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+h1 {
+  font-size: 4rem;
 }
 
 h3 {
@@ -42,6 +45,8 @@ h3 {
   color: black;
   border-bottom: 1px solid #dddddd;
   box-shadow: 0 3px 8px #dddddd;
+  z-index: 1;
+  position: relative;
 }
 
 .header__main {
@@ -89,10 +94,64 @@ h3 {
 
 .header__menu__button {
   background-color: #7cba30;
-  padding: 20px 35px;
+  padding: 15px 35px;
   color: white;
   border-radius: 5px;
   font-size: initial;
   text-decoration: none;
   margin-left: 15px;
+}
+
+.header__menu__button:hover {
+  cursor: pointer;
+}
+
+.header__menu__button:hover {
+  background-color: #76BD01;
+}
+
+.aboutUs {
+  background-image: url("../images/illustrations/main.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: auto;
+  background-size: cover;
+  padding-bottom: 50px;
+  padding-top: 90px;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.aboutUs__content {
+  margin: 0 auto;
+  width: 500px;
+  text-align: center;
+}
+
+.aboutUs__content__header {
+  padding-bottom: 15px;
+  color: black;
+}
+
+.aboutUs__content__subscription {
+  padding-bottom: 60px;
+  color: #606474;
+  line-height: 20px;
+}
+
+.aboutUs__content__button {
+  background-color: #7cba30;
+  padding: 15px 35px;
+  color: white;
+  border-radius: 5px;
+  font-size: initial;
+  text-decoration: none;
+}
+
+.aboutUs__content__button:hover {
+  cursor: pointer;
+}
+
+.aboutUs__content__button:focus {
+  background-color: #76BD01;
 }

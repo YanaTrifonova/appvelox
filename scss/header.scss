@@ -6,7 +6,8 @@
   color: $font-main;
   border-bottom: 1px solid $color-light;
   box-shadow: 0 3px 8px $color-light;
-
+  z-index: 1;
+  position: relative;
 
   &__main {
     display: flex;
@@ -49,6 +50,10 @@
     &__button {
       @include button;
       margin-left: 15px;
+
+      &:hover {
+        background-color: $button-green-change;
+      }
     }
   }
 }
