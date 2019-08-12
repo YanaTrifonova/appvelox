@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <link href="stylesheet/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
     <title>Понимаю</title>
 
 </head>
@@ -36,7 +38,8 @@
     <article class="situation">
         <h2 class="situation__header">В каких ситуациях можно обратиться к нам</h2>
         <nav class="situation__nav">
-            <p class="situation__nav__swipe situation__nav__swipe-active" id="crisisMenu" onclick="changeCard(1)">Кризис</p>
+            <p class="situation__nav__swipe situation__nav__swipe-active" id="crisisMenu" onclick="changeCard(1)">
+                Кризис</p>
             <p class="situation__nav__swipe" id="familyMenu" onclick="changeCard(2)">Семья</p>
             <p class="situation__nav__swipe" id="childrenMenu" onclick="changeCard(3)">Дети</p>
             <p class="situation__nav__swipe" id="communicationMenu" onclick="changeCard(4)">Коммуникации</p>
@@ -45,7 +48,7 @@
         </nav>
         <hr/>
         <section class="situation__card" id="crisis">
-            <img class="situation__card__img" src="images/icons/piggy-bank.png" alt="crisis">
+            <img class="situation__card__img" src="images/icons/piggy-bank@3x.png" alt="crisis">
             <div class="situation__card__text">
                 <h3 class="situation__card__text__header">Выслушаем и поддержим в трудной жизненной ситуации, стрессе,
                     кризисе, поможем справиться с душевной
@@ -133,6 +136,91 @@
             </div>
         </section>
     </article>
+
+    <article class="howDoWeWork">
+        <h2 class="howDoWeWork__header">Как мы работаем</h2>
+        <section class="howDoWeWork__section">
+            <img class="howDoWeWork__section__img" src="images/illustrations/how_do_we_work_1.png"
+                 alt="distance counseling">
+            <div class="howDoWeWork__section__text-right">
+                <h3 class="howDoWeWork__section__text__header">Удобно</h3>
+                <p class="howDoWeWork__section__text__subscription">Мы оказываем преимущественно дистанционные
+                    консультации – по телефону или через skype. Такой вид
+                    консультаций по своей результативности является ничем не хуже очной. Кроме того, вы экономите время
+                    на дорогу и не заботитесь о том, как вы выглядите и вообще можете находиться, где угодно.</p>
+            </div>
+        </section>
+        <section class="howDoWeWork__section">
+            <div class="howDoWeWork__section__text-right">
+                <h3 class="howDoWeWork__section__text__header">Эффективно</h3>
+                <p class="howDoWeWork__section__text__subscription">Мы не обещаем чуда, но предлагаем увидеть жизненные
+                    альтернативы и научиться их реализовывать. В отличие от телефона доверия, где коммуникаций носит
+                    разовый характер и направлена на разрешение кризиса сиюминутно, мы готовы «вести» человека, пройти с
+                    ним вместе сложный жизненный этап или переосмыслить ситуацию в поисках того пути, которые наиболее
+                    ему подходит.</p>
+            </div>
+            <img class="howDoWeWork__section__img" src="images/illustrations/how_do_we_work_2.png" alt="effective work">
+        </section>
+        <section class="howDoWeWork__section">
+            <img class="howDoWeWork__section__img" src="images/illustrations/how_do_we_work_3.png" alt="confidential">
+            <div class="howDoWeWork__section__text-right">
+                <h3 class="howDoWeWork__section__text__header">Конфиденциально</h3>
+                <p class="howDoWeWork__section__text__subscription">Многие люди уже получили помощь у нас. Иногда мы
+                    приводим примеры реальных случаев потому, что многие могут себя в них узнать, примерить на себя и
+                    ознакомиться с ценными наблюдениями психологов. Однако основная индивидуальная работа начнется при
+                    личном обращении. Мы позаботимся о том, чтобы все осталось строго между нами.</p>
+            </div>
+        </section>
+        <section class="howDoWeWork__section">
+            <div class="howDoWeWork__section__text-right">
+                <h3 class="howDoWeWork__section__text__header">С пониманием</h3>
+                <p class="howDoWeWork__section__text__subscription">Мы не считаем потребность в помощи слабостью или
+                    изъяном. Если мы и оцениваем обращение человека за помощью, то скорее как естественный шаг,
+                    говорящий о его готовности к переменам и развитию.</p>
+            </div>
+            <img class="howDoWeWork__section__img" src="images/illustrations/how_do_we_work_4.png" alt="with pleasant">
+        </section>
+    </article>
+    <hr/>
+
+    <article class="specialist">
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <section class="specialist__card">
+                        <img class="specialist__card__img" src="images/doctors/doctor_1.png">
+                        <div>
+                            <h4>Психотерапевт</h4>
+                            <h3>Алексей Викторович</h3>
+                            <p>Работает с взрослыми, подростками и детьми. Диагностирует и лечит шизофрению,
+                                маниакально-депрессивный психоз (БАР), неврастению, депрессию, расстройства пищевого
+                                поведения, панические атаки и другие заболевания. Практикует арт-терапию, в том числе, в
+                                реабилитации людей с ограниченными возможностями.</p>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+                <div class="swiper-slide">Slide 10</div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </article>
+
+
 </main>
 
 <footer>
@@ -140,6 +228,7 @@
 </footer>
 
 </body>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+<script src="js/swiper.js"></script>
 <script src="js/situation.js"></script>
 </html>

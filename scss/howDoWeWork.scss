@@ -1,0 +1,58 @@
+.howDoWeWork {
+  margin-bottom: 60px;
+
+  &__header {
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  &__section {
+    width: 900px;
+    margin: 60px auto 0 auto;
+    display: flex;
+
+    &__text {
+
+      &-right {
+        margin-left: 40px;
+      }
+
+      &-left {
+        margin-right: 40px;
+      }
+
+      &__header {
+        padding-bottom: 10px;
+      }
+
+      &__subscription {
+        font-size: 12px;
+        line-height: 18px;
+        color: $font-subscription;
+      }
+    }
+  }
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}

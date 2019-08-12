@@ -15,6 +15,7 @@ body {
   box-sizing: border-box;
   font-family: Roboto,Arial,sans-serif;
   font-weight: 400;
+  letter-spacing: 0.13rem;
 }
 
 a {
@@ -23,7 +24,7 @@ a {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 h2 {
@@ -209,8 +210,8 @@ hr {
 }
 
 .situation__card__img {
-  height: 130px;
-  width: 130px;
+  height: 120px;
+  width: 120px;
 }
 
 .situation__card__text {
@@ -235,4 +236,56 @@ hr {
 
 .situation__hide {
   display: none;
+}
+
+.howDoWeWork {
+  margin-bottom: 60px;
+}
+
+.howDoWeWork__header {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.howDoWeWork__section {
+  width: 900px;
+  margin: 60px auto 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.howDoWeWork__section__text-right {
+  margin-left: 40px;
+}
+
+.howDoWeWork__section__text-left {
+  margin-right: 40px;
+}
+
+.howDoWeWork__section__text__header {
+  padding-bottom: 10px;
+}
+
+.howDoWeWork__section__text__subscription {
+  font-size: 12px;
+  line-height: 18px;
+  color: #606474;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
