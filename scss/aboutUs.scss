@@ -21,14 +21,15 @@
     &__subscription {
       padding-bottom: 60px;
       color: $font-subscription;
-      line-height: 20px;
+      line-height: 25px;
+      font-size: 1.5rem;
     }
 
     &__button {
       @include button;
 
       &:focus {
-        background-color: $button-green-change;
+        background-color: $color-green-change;
       }
     }
   }

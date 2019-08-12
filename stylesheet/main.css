@@ -22,16 +22,24 @@ a {
   color: inherit;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 h1 {
   font-size: 4rem;
 }
 
+h2 {
+  font-size: 2.5rem;
+}
+
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #dddddd;
+  padding: 0;
 }
 
 .header {
@@ -93,7 +101,7 @@ h3 {
 }
 
 .header__menu__button {
-  background-color: #7cba30;
+  background-color: #76BD01;
   padding: 15px 35px;
   color: white;
   border-radius: 5px;
@@ -136,11 +144,12 @@ h3 {
 .aboutUs__content__subscription {
   padding-bottom: 60px;
   color: #606474;
-  line-height: 20px;
+  line-height: 25px;
+  font-size: 1.5rem;
 }
 
 .aboutUs__content__button {
-  background-color: #7cba30;
+  background-color: #76BD01;
   padding: 15px 35px;
   color: white;
   border-radius: 5px;
@@ -154,4 +163,76 @@ h3 {
 
 .aboutUs__content__button:focus {
   background-color: #76BD01;
+}
+
+.situation {
+  background: linear-gradient(0deg, #f3f3f3 0%, white 100%);
+}
+
+.situation__header {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.situation__nav {
+  margin: 45px auto 0;
+  width: 800px;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.situation__nav__swipe {
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  font-size: 1.4rem;
+  color: #606474;
+}
+
+.situation__nav__swipe:hover {
+  cursor: pointer;
+}
+
+.situation__nav__swipe-active {
+  border-bottom: 3px solid #7cba30;
+}
+
+.situation__card {
+  width: 800px;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 70px auto 0;
+  padding-bottom: 70px;
+}
+
+.situation__card__img {
+  height: 130px;
+  width: 130px;
+}
+
+.situation__card__text {
+  padding-left: 60px;
+}
+
+.situation__card__text__header {
+  line-height: 2.5rem;
+}
+
+.situation__card__text__tags {
+  margin-top: 20px;
+  list-style-type: none;
+}
+
+.situation__card__text__tags-item {
+  display: inline;
+  margin-right: 20px;
+  font-size: 12px;
+  color: #606474;
+}
+
+.situation__hide {
+  display: none;
 }
