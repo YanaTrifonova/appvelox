@@ -70,6 +70,17 @@ hr {
   position: relative;
 }
 
+.header-display {
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+.header-hidden {
+  height: 100px;
+}
+
 .header__main {
   display: -ms-flexbox;
   display: flex;
@@ -86,24 +97,57 @@ hr {
   cursor: pointer;
 }
 
-.header__main__switcher {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.header__main__switcher-border {
-  border-right: 1px solid #a7b1b7;
-}
-
-.header__main__switcher-deactivate {
-  color: #606474;
-  margin-bottom: 3px;
-}
-
 .header__menu {
   display: -ms-flexbox;
   display: flex;
   margin-right: 30px;
+}
+
+@media (max-width: 1280px) {
+  .header__menu {
+    display: none;
+  }
+}
+
+.header__menu__switcher {
+  padding-left: 20px;
+  padding-right: 20px;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+@media (max-width: 1280px) {
+  .header__menu__switcher {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 200px;
+    margin: 0 auto;
+  }
+}
+
+.header__menu__switcher-private {
+  border-right: 1px solid #a7b1b7;
+}
+
+@media (max-width: 1280px) {
+  .header__menu__switcher-private {
+    padding-top: 60px;
+    border-right: none;
+    border-bottom: 1px solid #a7b1b7;
+  }
+}
+
+.header__menu__switcher-business {
+  color: #606474;
+  margin-bottom: 3px;
+  padding-right: 60px;
+}
+
+@media (max-width: 1280px) {
+  .header__menu__switcher-business {
+    padding-bottom: 60px;
+    padding-right: 20px;
+  }
 }
 
 .header__menu__text {
@@ -111,6 +155,12 @@ hr {
       align-self: center;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media (max-width: 1280px) {
+  .header__menu__text {
+    padding-bottom: 30px;
+  }
 }
 
 .header__menu__button {
@@ -127,8 +177,126 @@ hr {
   cursor: pointer;
 }
 
+@media (max-width: 1280px) {
+  .header__menu__button {
+    margin: 0 auto;
+  }
+}
+
 .header__menu__button:hover {
   background-color: #76BD01;
+}
+
+.header__menu-display {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #dddddd;
+  text-align: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.header__menu-hidden {
+  display: none;
+}
+
+.nav-tgl {
+  display: inline-block;
+  cursor: pointer;
+  z-index: 100;
+  width: 70px;
+  height: 70px;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  background: #fff;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.24);
+  line-height: 0.6;
+  text-align: center;
+}
+
+.nav-tgl > span {
+  display: inline-block;
+  position: relative;
+  height: 2px;
+  width: 34px;
+  border-radius: 1px;
+  background: #293335;
+  vertical-align: middle;
+}
+
+.nav-tgl > span:before, .nav-tgl > span:after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  height: 2px;
+  border-radius: 1px;
+  background: #293335;
+  transition: all 200ms;
+}
+
+.nav-tgl > span:before {
+  top: -11px;
+  left: 0px;
+  width: 34px;
+}
+
+.nav-tgl > span:after {
+  top: 11px;
+  left: 0px;
+  width: 34px;
+}
+
+.nav-tgl:focus {
+  outline: none;
+}
+
+.menu.active .nav:before {
+  visibility: visible;
+  -webkit-clip-path: circle(100%);
+          clip-path: circle(100%);
+}
+
+.menu.active .nav-tgl > span {
+  height: 0;
+}
+
+.menu.active .nav-tgl > span:after, .menu.active .nav-tgl > span:before {
+  top: 0px;
+  left: 0;
+  width: 34px;
+}
+
+.menu.active .nav-tgl > span:after {
+  -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+}
+
+.menu.active .nav-tgl > span:before {
+  -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+}
+
+.active {
+  position: fixed;
+  z-index: 1;
+  top: 15px;
+  right: 0px;
+}
+
+.menu {
+  margin-right: 20px;
+}
+
+@media (min-width: 1281px) {
+  .menu {
+    display: none;
+  }
 }
 
 .aboutUs {
@@ -401,6 +569,7 @@ hr {
   -ms-flex-pack: justify;
       justify-content: space-between;
   margin-bottom: 20px;
+  width: 400px;
 }
 
 .footer__aside__confidential {
@@ -409,7 +578,7 @@ hr {
 }
 
 .footer__aside__confidential__name-link {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .footer__socialNetwork__header {

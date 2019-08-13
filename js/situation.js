@@ -12,7 +12,14 @@ let communicationMenu = document.getElementById('communicationMenu');
 let menAndWomenMenu = document.getElementById('menAndWomenMenu');
 let growthMenu = document.getElementById('growthMenu');
 
+// let b = {
+//     "crisis" : function() {
+//
+// }
+// }
+
 function changeCard(e) {
+
     if (e===1) {
         crisis.classList.remove("situation__hide");
         family.classList.add("situation__hide");

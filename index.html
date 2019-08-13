@@ -10,13 +10,16 @@
 </head>
 <body>
 
-<header class="header">
+<header class="header" id="header">
     <div class="header__main">
         <img class="header__main__logo" src="images/logo.svg" alt="Company logotype" onClick="window.location.reload()">
-        <h5 class="header__main__switcher header__main__switcher-border"><a href="#">Частным лицам</a></h5>
-        <h5 class="header__main__switcher header__main__switcher-deactivate"><a href="#">Бизнесу</a></h5>
     </div>
-    <nav class="header__menu">
+    <div class="menu">
+        <button class="nav-tgl" type="button" aria-label="toggle menu"><span aria-hidden="true"></span></button>
+    </div>
+    <nav class="header__menu" id="header__menu">
+        <h5 class="header__menu__switcher header__menu__switcher-private"><a href="#">Частным лицам</a></h5>
+        <h5 class="header__menu__switcher header__menu__switcher-business"><a href="#">Бизнесу</a></h5>
         <h5 class="header__menu__text"><a href="#">Услуги</a></h5>
         <h5 class="header__menu__text"><a href="#">О нас</a></h5>
         <h5 class="header__menu__text"><a href="#">Блог</a></h5>
@@ -24,6 +27,7 @@
         <h5 class="header__menu__text"><a href="#">Контакты</a></h5>
         <a class="header__menu__button" href="#">Задать вопрос</a>
     </nav>
+
 </header>
 <main>
     <article class="aboutUs">
@@ -320,7 +324,8 @@
             <h5 class="footer__aside__navigation__text"><a href="#">Контакты</a></h5>
         </nav>
         <div class="footer__aside__confidential">
-            <h5 class="footer__aside__confidential__name">© 2017, ООО «Психологический Центр»<a class="footer__aside__confidential__name-link href="#">Конфиденциальность</a></h5>
+            <h5 class="footer__aside__confidential__name">© 2017, ООО «Психологический Центр»<a
+                    class="footer__aside__confidential__name-link" href="#">Конфиденциальность</a></h5>
         </div>
         <div class="footer__aside__developed">
             <h5 class="footer__aside__developed__text">Разработано...</h5>
@@ -350,6 +355,7 @@
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+<script src="js/header.js"></script>
 <script src="js/swiper.js"></script>
 <script src="js/situation.js"></script>
 </html>
