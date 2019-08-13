@@ -13,9 +13,17 @@
     width: 500px;
     text-align: center;
 
+    @media (max-width: 550px) {
+      width: 300px;
+    }
+
     &__header {
       padding-bottom: 15px;
       color: $font-main;
+
+      @media (max-width: 550px) {
+        padding-bottom: 45px;
+      }
     }
 
     &__subscription {

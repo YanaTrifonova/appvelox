@@ -317,9 +317,21 @@ hr {
   text-align: center;
 }
 
+@media (max-width: 550px) {
+  .aboutUs__content {
+    width: 300px;
+  }
+}
+
 .aboutUs__content__header {
   padding-bottom: 15px;
   color: black;
+}
+
+@media (max-width: 550px) {
+  .aboutUs__content__header {
+    padding-bottom: 45px;
+  }
 }
 
 .aboutUs__content__subscription {
