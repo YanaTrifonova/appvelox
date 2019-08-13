@@ -378,6 +378,28 @@ hr {
       justify-content: space-between;
 }
 
+@media (max-width: 1024px) {
+  .situation__nav {
+    overflow-x: scroll;
+    width: 900px;
+    white-space: nowrap;
+    overflow-y: hidden;
+    margin-left: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .situation__nav {
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 550px) {
+  .situation__nav {
+    margin-left: 100px;
+  }
+}
+
 .situation__nav__swipe {
   text-transform: uppercase;
   padding-bottom: 20px;
@@ -401,13 +423,38 @@ hr {
   padding-bottom: 70px;
 }
 
+@media (max-width: 1024px) {
+  .situation__card {
+    width: unset;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+}
+
 .situation__card__img {
   height: 120px;
   width: 120px;
 }
 
+@media (max-width: 1024px) {
+  .situation__card__img {
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto 40px auto;
+  }
+}
+
 .situation__card__text {
   padding-left: 60px;
+}
+
+@media (max-width: 1024px) {
+  .situation__card__text {
+    padding-right: 60px;
+    text-align: center;
+  }
 }
 
 .situation__card__text__header {

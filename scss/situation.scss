@@ -13,6 +13,21 @@
     display: flex;
     justify-content: space-between;
 
+    @media (max-width: 1024px) {
+      overflow-x: scroll;
+      width: 900px;
+      white-space: nowrap;
+      overflow-y: hidden;
+      margin-left: 300px;
+    }
+
+    @media (max-width: 768px) {
+      margin-left: 200px;
+    }
+
+    @media (max-width: 550px) {
+      margin-left: 100px;
+    }
 
     &__swipe {
       text-transform: uppercase;
@@ -36,13 +51,29 @@
     margin: 70px auto 0;
     padding-bottom: 70px;
 
+    @media (max-width: 1024px) {
+      width: unset;
+      display: flex;
+      flex-direction: column;
+    }
+
     &__img {
       height: 120px;
       width: 120px;
+
+      @media (max-width: 1024px) {
+        display: flex;
+        margin: 0 auto 40px auto;
+      }
     }
 
     &__text {
       padding-left: 60px;
+
+      @media (max-width: 1024px) {
+        padding-right: 60px;
+        text-align: center;
+      }
 
       &__header {
         line-height: 2.5rem;
