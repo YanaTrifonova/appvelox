@@ -717,10 +717,23 @@ hr {
   padding-bottom: 60px;
 }
 
+@media (max-width: 1024px) {
+  .trustUs {
+    padding-bottom: 120px;
+  }
+}
+
 .trustUs__header {
   text-align: center;
   margin-bottom: 60px;
   padding-top: 60px;
+}
+
+@media (max-width: 1024px) {
+  .trustUs__header {
+    margin-bottom: 30px;
+    padding-top: 30px;
+  }
 }
 
 .trustUs__container {
@@ -728,9 +741,27 @@ hr {
   margin: 0 auto;
 }
 
+@media (max-width: 1024px) {
+  .trustUs__container {
+    width: auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+}
+
 .trustUs__container__img {
   height: 70px;
   margin-right: 30px;
+}
+
+@media (max-width: 1024px) {
+  .trustUs__container__img {
+    height: auto;
+    margin: 20px auto 0 auto;
+    width: 30%;
+  }
 }
 
 .footer {
