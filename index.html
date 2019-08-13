@@ -41,13 +41,13 @@
     <article class="situation">
         <h2 class="situation__header">В каких ситуациях можно обратиться к нам</h2>
         <nav class="situation__nav">
-            <p class="situation__nav__swipe situation__nav__swipe-active" id="crisisMenu" onclick="changeCard(1)">
+            <p class="situation__nav__roll situation__nav__roll-active" id="crisisMenu" onclick="changeCard(1)">
                 Кризис</p>
-            <p class="situation__nav__swipe" id="familyMenu" onclick="changeCard(2)">Семья</p>
-            <p class="situation__nav__swipe" id="childrenMenu" onclick="changeCard(3)">Дети</p>
-            <p class="situation__nav__swipe" id="communicationMenu" onclick="changeCard(4)">Коммуникации</p>
-            <p class="situation__nav__swipe" id="menAndWomenMenu" onclick="changeCard(5)">Мужчина и женщина</p>
-            <p class="situation__nav__swipe" id="growthMenu" onclick="changeCard(6)">Развитие</p>
+            <p class="situation__nav__roll" id="familyMenu" onclick="changeCard(2)">Семья</p>
+            <p class="situation__nav__roll" id="childrenMenu" onclick="changeCard(3)">Дети</p>
+            <p class="situation__nav__roll" id="communicationMenu" onclick="changeCard(4)">Коммуникации</p>
+            <p class="situation__nav__roll" id="menAndWomenMenu" onclick="changeCard(5)">Мужчина и женщина</p>
+            <p class="situation__nav__roll" id="growthMenu" onclick="changeCard(6)">Развитие</p>
         </nav>
         <hr/>
         <section class="situation__card" id="crisis">
@@ -139,55 +139,86 @@
             </div>
         </section>
     </article>
-
     <article class="howDoWeWork">
         <h2 class="howDoWeWork__header">Как мы работаем</h2>
-        <section class="howDoWeWork__section">
-            <img class="howDoWeWork__section__img" src="images/illustrations/how_do_we_work_1.png"
-                 alt="distance counseling">
-            <div class="howDoWeWork__section__text-right">
-                <h3 class="howDoWeWork__section__text__header">Удобно</h3>
-                <p class="howDoWeWork__section__text__subscription">Мы оказываем преимущественно дистанционные
-                    консультации – по телефону или через skype. Такой вид
-                    консультаций по своей результативности является ничем не хуже очной. Кроме того, вы экономите время
-                    на дорогу и не заботитесь о том, как вы выглядите и вообще можете находиться, где угодно.</p>
+        <div class="swiper-container swiper-container-howDoWeWork">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <section class="howDoWeWork__section howDoWeWork__section-up">
+                        <img class="howDoWeWork__section__img" src="images/illustrations/how_do_we_work_1.png"
+                             alt="distance counseling">
+                        <div class="howDoWeWork__section__text-right howDoWeWork__section__text">
+                            <h3 class="howDoWeWork__section__text__header">Удобно</h3>
+                            <p class="howDoWeWork__section__text__subscription">Мы оказываем преимущественно
+                                дистанционные
+                                консультации – по телефону или через skype. Такой вид
+                                консультаций по своей результативности является ничем не хуже очной. Кроме того, вы
+                                экономите время
+                                на дорогу и не заботитесь о том, как вы выглядите и вообще можете находиться, где
+                                угодно.</p>
+                        </div>
+                    </section>
+                </div>
+                <div class="swiper-slide">
+                    <section class="howDoWeWork__section howDoWeWork__section-down">
+                        <div class="howDoWeWork__section__text-left howDoWeWork__section__text">
+                            <h3 class="howDoWeWork__section__text__header">Эффективно</h3>
+                            <p class="howDoWeWork__section__text__subscription">Мы не обещаем чуда, но предлагаем
+                                увидеть жизненные
+                                альтернативы и научиться их реализовывать. В отличие от телефона доверия, где
+                                коммуникаций носит
+                                разовый характер и направлена на разрешение кризиса сиюминутно, мы готовы «вести»
+                                человека, пройти с
+                                ним вместе сложный жизненный этап или переосмыслить ситуацию в поисках того пути,
+                                которые наиболее
+                                ему подходит.</p>
+                        </div>
+                        <img class="howDoWeWork__section__img" src="images/illustrations/how_do_we_work_2.png"
+                             alt="effective work">
+                    </section>
+                </div>
+                <div class="swiper-slide">
+                    <section class="howDoWeWork__section howDoWeWork__section-up">
+                        <img class="howDoWeWork__section__img" src="images/illustrations/how_do_we_work_3.png"
+                             alt="confidential">
+                        <div class="howDoWeWork__section__text-right howDoWeWork__section__text">
+                            <h3 class="howDoWeWork__section__text__header">Конфиденциально</h3>
+                            <p class="howDoWeWork__section__text__subscription">Многие люди уже получили помощь у нас.
+                                Иногда мы
+                                приводим примеры реальных случаев потому, что многие могут себя в них узнать, примерить
+                                на себя и
+                                ознакомиться с ценными наблюдениями психологов. Однако основная индивидуальная работа
+                                начнется при
+                                личном обращении. Мы позаботимся о том, чтобы все осталось строго между нами.</p>
+                        </div>
+                    </section>
+                </div>
+                <div class="swiper-slide">
+                    <section class="howDoWeWork__section howDoWeWork__section-down">
+                        <div class="howDoWeWork__section__text-left howDoWeWork__section__text">
+                            <h3 class="howDoWeWork__section__text__header">С пониманием</h3>
+                            <p class="howDoWeWork__section__text__subscription">Мы не считаем потребность в помощи
+                                слабостью или
+                                изъяном. Если мы и оцениваем обращение человека за помощью, то скорее как естественный
+                                шаг,
+                                говорящий о его готовности к переменам и развитию.</p>
+                        </div>
+                        <img class="howDoWeWork__section__img" src="images/illustrations/how_do_we_work_4.png"
+                             alt="with pleasant">
+                    </section>
+                </div>
             </div>
-        </section>
-        <section class="howDoWeWork__section">
-            <div class="howDoWeWork__section__text-left">
-                <h3 class="howDoWeWork__section__text__header">Эффективно</h3>
-                <p class="howDoWeWork__section__text__subscription">Мы не обещаем чуда, но предлагаем увидеть жизненные
-                    альтернативы и научиться их реализовывать. В отличие от телефона доверия, где коммуникаций носит
-                    разовый характер и направлена на разрешение кризиса сиюминутно, мы готовы «вести» человека, пройти с
-                    ним вместе сложный жизненный этап или переосмыслить ситуацию в поисках того пути, которые наиболее
-                    ему подходит.</p>
-            </div>
-            <img class="howDoWeWork__section__img" src="images/illustrations/how_do_we_work_2.png" alt="effective work">
-        </section>
-        <section class="howDoWeWork__section">
-            <img class="howDoWeWork__section__img" src="images/illustrations/how_do_we_work_3.png" alt="confidential">
-            <div class="howDoWeWork__section__text-right">
-                <h3 class="howDoWeWork__section__text__header">Конфиденциально</h3>
-                <p class="howDoWeWork__section__text__subscription">Многие люди уже получили помощь у нас. Иногда мы
-                    приводим примеры реальных случаев потому, что многие могут себя в них узнать, примерить на себя и
-                    ознакомиться с ценными наблюдениями психологов. Однако основная индивидуальная работа начнется при
-                    личном обращении. Мы позаботимся о том, чтобы все осталось строго между нами.</p>
-            </div>
-        </section>
-        <section class="howDoWeWork__section">
-            <div class="howDoWeWork__section__text-left">
-                <h3 class="howDoWeWork__section__text__header">С пониманием</h3>
-                <p class="howDoWeWork__section__text__subscription">Мы не считаем потребность в помощи слабостью или
-                    изъяном. Если мы и оцениваем обращение человека за помощью, то скорее как естественный шаг,
-                    говорящий о его готовности к переменам и развитию.</p>
-            </div>
-            <img class="howDoWeWork__section__img" src="images/illustrations/how_do_we_work_4.png" alt="with pleasant">
-        </section>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination swiper-pagination-howDoWeWork"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev swiper-button-prev-howDoWeWork"></div>
+            <div class="swiper-button-next swiper-button-next-howDoWeWork"></div>
+        </div>
     </article>
     <hr/>
     <article class="specialist">
         <!-- Swiper -->
-        <div class="swiper-container">
+        <div class="swiper-container swiper-container-s">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <section class="specialist__card">
@@ -272,10 +303,10 @@
                 </div>
             </div>
             <!-- Add Pagination -->
-            <div class="swiper-pagination specialist__pagination"></div>
+            <div class="swiper-pagination swiper-pagination-s specialist__pagination"></div>
             <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev swiper-button-prev-s"></div>
+            <div class="swiper-button-next swiper-button-next-s"></div>
         </div>
     </article>
     <hr/>

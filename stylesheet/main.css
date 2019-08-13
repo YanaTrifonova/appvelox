@@ -400,18 +400,18 @@ hr {
   }
 }
 
-.situation__nav__swipe {
+.situation__nav__roll {
   text-transform: uppercase;
   padding-bottom: 20px;
   font-size: 1.4rem;
   color: #606474;
 }
 
-.situation__nav__swipe:hover {
+.situation__nav__roll:hover {
   cursor: pointer;
 }
 
-.situation__nav__swipe-active {
+.situation__nav__roll-active {
   border-bottom: 3px solid #7cba30;
 }
 
@@ -493,21 +493,87 @@ hr {
   display: flex;
 }
 
+@media (max-width: 1024px) {
+  .howDoWeWork__section {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .howDoWeWork__section-up {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    width: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .howDoWeWork__section-down {
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    width: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .howDoWeWork__section__img {
+    width: 300px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .howDoWeWork__section__text {
+    text-align: center;
+  }
+}
+
 .howDoWeWork__section__text-right {
   margin-left: 40px;
+}
+
+@media (max-width: 1024px) {
+  .howDoWeWork__section__text-right {
+    margin-left: 0px;
+  }
 }
 
 .howDoWeWork__section__text-left {
   margin-right: 40px;
 }
 
+@media (max-width: 1024px) {
+  .howDoWeWork__section__text-left {
+    margin-right: 0px;
+  }
+}
+
 .howDoWeWork__section__text__header {
   padding-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+  .howDoWeWork__section__text__header {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
 }
 
 .howDoWeWork__section__text__subscription {
   line-height: 18px;
   color: #606474;
+}
+
+@media (max-width: 1024px) {
+  .howDoWeWork__section__text__subscription {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.howDoWeWork__pagination {
+  top: unset;
+  position: unset;
 }
 
 .specialist__card {

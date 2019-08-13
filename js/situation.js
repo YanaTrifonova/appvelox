@@ -28,12 +28,12 @@ function changeCard(e) {
         menAndWomen.classList.add("situation__hide");
         growth.classList.add("situation__hide");
 
-        crisisMenu.classList.add("situation__nav__swipe-active");
-        familyMenu.classList.remove("situation__nav__swipe-active");
-        childrenMenu.classList.remove("situation__nav__swipe-active");
-        communicationMenu.classList.remove("situation__nav__swipe-active");
-        menAndWomenMenu.classList.remove("situation__nav__swipe-active");
-        growthMenu.classList.remove("situation__nav__swipe-active");
+        crisisMenu.classList.add("situation__nav__roll-active");
+        familyMenu.classList.remove("situation__nav__roll-active");
+        childrenMenu.classList.remove("situation__nav__roll-active");
+        communicationMenu.classList.remove("situation__nav__roll-active");
+        menAndWomenMenu.classList.remove("situation__nav__roll-active");
+        growthMenu.classList.remove("situation__nav__roll-active");
     } else if (e===2) {
         crisis.classList.add("situation__hide");
         family.classList.remove("situation__hide");
@@ -42,12 +42,12 @@ function changeCard(e) {
         menAndWomen.classList.add("situation__hide");
         growth.classList.add("situation__hide");
 
-        crisisMenu.classList.remove("situation__nav__swipe-active");
-        familyMenu.classList.add("situation__nav__swipe-active");
-        childrenMenu.classList.remove("situation__nav__swipe-active");
-        communicationMenu.classList.remove("situation__nav__swipe-active");
-        menAndWomenMenu.classList.remove("situation__nav__swipe-active");
-        growthMenu.classList.remove("situation__nav__swipe-active");
+        crisisMenu.classList.remove("situation__nav__roll-active");
+        familyMenu.classList.add("situation__nav__roll-active");
+        childrenMenu.classList.remove("situation__nav__roll-active");
+        communicationMenu.classList.remove("situation__nav__roll-active");
+        menAndWomenMenu.classList.remove("situation__nav__roll-active");
+        growthMenu.classList.remove("situation__nav__roll-active");
     } else if (e===3) {
         crisis.classList.add("situation__hide");
         family.classList.add("situation__hide");
@@ -56,12 +56,12 @@ function changeCard(e) {
         menAndWomen.classList.add("situation__hide");
         growth.classList.add("situation__hide");
 
-        crisisMenu.classList.remove("situation__nav__swipe-active");
-        familyMenu.classList.remove("situation__nav__swipe-active");
-        childrenMenu.classList.add("situation__nav__swipe-active");
-        communicationMenu.classList.remove("situation__nav__swipe-active");
-        menAndWomenMenu.classList.remove("situation__nav__swipe-active");
-        growthMenu.classList.remove("situation__nav__swipe-active");
+        crisisMenu.classList.remove("situation__nav__roll-active");
+        familyMenu.classList.remove("situation__nav__roll-active");
+        childrenMenu.classList.add("situation__nav__roll-active");
+        communicationMenu.classList.remove("situation__nav__roll-active");
+        menAndWomenMenu.classList.remove("situation__nav__roll-active");
+        growthMenu.classList.remove("situation__nav__roll-active");
     } else if (e===4) {
         crisis.classList.add("situation__hide");
         family.classList.add("situation__hide");
@@ -70,12 +70,12 @@ function changeCard(e) {
         menAndWomen.classList.add("situation__hide");
         growth.classList.add("situation__hide");
 
-        crisisMenu.classList.remove("situation__nav__swipe-active");
-        familyMenu.classList.remove("situation__nav__swipe-active");
-        childrenMenu.classList.remove("situation__nav__swipe-active");
-        communicationMenu.classList.add("situation__nav__swipe-active");
-        menAndWomenMenu.classList.remove("situation__nav__swipe-active");
-        growthMenu.classList.remove("situation__nav__swipe-active");
+        crisisMenu.classList.remove("situation__nav__roll-active");
+        familyMenu.classList.remove("situation__nav__roll-active");
+        childrenMenu.classList.remove("situation__nav__roll-active");
+        communicationMenu.classList.add("situation__nav__roll-active");
+        menAndWomenMenu.classList.remove("situation__nav__roll-active");
+        growthMenu.classList.remove("situation__nav__roll-active");
     } else if (e===5) {
         crisis.classList.add("situation__hide");
         family.classList.add("situation__hide");
@@ -84,12 +84,12 @@ function changeCard(e) {
         menAndWomen.classList.remove("situation__hide");
         growth.classList.add("situation__hide");
 
-        crisisMenu.classList.remove("situation__nav__swipe-active");
-        familyMenu.classList.remove("situation__nav__swipe-active");
-        childrenMenu.classList.remove("situation__nav__swipe-active");
-        communicationMenu.classList.remove("situation__nav__swipe-active");
-        menAndWomenMenu.classList.add("situation__nav__swipe-active");
-        growthMenu.classList.remove("situation__nav__swipe-active");
+        crisisMenu.classList.remove("situation__nav__roll-active");
+        familyMenu.classList.remove("situation__nav__roll-active");
+        childrenMenu.classList.remove("situation__nav__roll-active");
+        communicationMenu.classList.remove("situation__nav__roll-active");
+        menAndWomenMenu.classList.add("situation__nav__roll-active");
+        growthMenu.classList.remove("situation__nav__roll-active");
     } else if (e===6) {
         crisis.classList.add("situation__hide");
         family.classList.add("situation__hide");
@@ -98,12 +98,12 @@ function changeCard(e) {
         menAndWomen.classList.add("situation__hide");
         growth.classList.remove("situation__hide");
 
-        crisisMenu.classList.remove("situation__nav__swipe-active");
-        familyMenu.classList.remove("situation__nav__swipe-active");
-        childrenMenu.classList.remove("situation__nav__swipe-active");
-        communicationMenu.classList.remove("situation__nav__swipe-active");
-        menAndWomenMenu.classList.remove("situation__nav__swipe-active");
-        growthMenu.classList.add("situation__nav__swipe-active");
+        crisisMenu.classList.remove("situation__nav__roll-active");
+        familyMenu.classList.remove("situation__nav__roll-active");
+        childrenMenu.classList.remove("situation__nav__roll-active");
+        communicationMenu.classList.remove("situation__nav__roll-active");
+        menAndWomenMenu.classList.remove("situation__nav__roll-active");
+        growthMenu.classList.add("situation__nav__roll-active");
     }
 
 }

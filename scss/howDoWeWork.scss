@@ -11,24 +11,75 @@
     margin: 60px auto 0 auto;
     display: flex;
 
+    @media (max-width: 1024px) {
+      margin-bottom: 100px;
+    }
+
+    &-up {
+      @media (max-width: 1024px) {
+        flex-direction: column;
+        width: auto;
+      }
+    }
+
+    &-down {
+      @media (max-width: 1024px) {
+        flex-direction: column-reverse;
+        width: auto;
+      }
+    }
+
+    &__img {
+      @media (max-width: 1024px) {
+        width: 300px;
+        margin: 0 auto;
+      }
+    }
+
     &__text {
+      @media (max-width: 1024px) {
+        text-align: center;
+      }
 
       &-right {
         margin-left: 40px;
+
+        @media (max-width: 1024px) {
+          margin-left: 0px;
+        }
       }
 
       &-left {
         margin-right: 40px;
+
+        @media (max-width: 1024px) {
+          margin-right: 0px;
+        }
       }
 
       &__header {
         padding-bottom: 10px;
+
+        @media (max-width: 1024px) {
+          padding-bottom: 30px;
+          padding-top: 30px;
+        }
       }
 
       &__subscription {
         line-height: 18px;
         color: $font-subscription;
+
+        @media (max-width: 1024px) {
+          margin-left: 20px;
+          margin-right: 20px;
+        }
       }
     }
+  }
+
+  &__pagination {
+    top: unset;
+    position: unset;
   }
 }
