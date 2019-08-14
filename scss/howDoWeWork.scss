@@ -30,6 +30,9 @@
     }
 
     &__img {
+      width: 399px;
+      height: 241px;
+
       @media (max-width: 1024px) {
         width: 300px;
         margin: 0 auto;

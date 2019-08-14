@@ -50,6 +50,7 @@
     display: flex;
     margin: 70px auto 0;
     padding-bottom: 70px;
+    min-height: 250px;
 
     @media (max-width: 1024px) {
       width: unset;

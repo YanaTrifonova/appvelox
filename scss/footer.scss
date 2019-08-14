@@ -1,13 +1,32 @@
 .footer {
-  width: 1000px;
   margin: 60px auto 40px auto;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-template-rows: repeat(3, 1fr);
+  width: 1000px;
+  height: 150px;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-row-gap: 20px;
+    max-width: 300px;
+    margin: 0px auto 40px auto;
+  }
 
   &__aside {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    @media (max-width: 1024px) {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
 
     &__navigation {
       display: flex;
@@ -15,81 +34,155 @@
       margin-bottom: 20px;
       width: 400px;
 
-      &__text {
-
+      @media (max-width: 1024px) {
+        flex-direction: column;
+        max-width: 300px;
       }
-    }
 
-    &__confidential {
-      color: $font-subscription;
-      margin-bottom: 20px;
-
-      &__name {
-
-        &-link {
-          margin-left: 20px;
+      &__text {
+        @media (max-width: 1024px) {
+          margin-top: 20px;
+          text-align: center;
         }
       }
     }
+  }
 
-    &__developed {
+  &__confidential {
+    color: $font-subscription;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
 
-      &__text {
+    @media (max-width: 1024px) {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 5;
+      grid-row-end: 6;
+    }
 
+    &__name {
+      @media (max-width: 1024px) {
+        text-align: center;
+      }
+
+      &-link {
+        margin-left: 20px;
+
+        @media (max-width: 1024px) {
+          display: block;
+          margin-left: 0px;
+          text-align: center;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+
+  &__developed {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+    @media (max-width: 1024px) {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 4;
+      grid-row-end: 5;
+    }
+
+    &__text {
+      @media (max-width: 1024px) {
+        text-align: center;
       }
     }
   }
 
   &__socialNetwork {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+
+    @media (max-width: 1024px) {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
 
     &__header {
       margin-bottom: 20px;
 
+      @media (max-width: 1024px) {
+        margin-bottom: 0px;
+      }
+
       &__text {
         color: $font-subscription;
+
+        @media (max-width: 1024px) {
+          display: none;
+        }
       }
     }
 
     &__icons {
       display: flex;
 
+      @media (max-width: 1024px) {
+        justify-content: center;
+      }
 
       &__facebook {
         background-image: url("../images/contacts/bAndW/facebook_BW.png");
-        border-radius: 5px;
-        width: 32px;
-        height: 32px;
-        margin-right: 10px;
+
+        @media (max-width: 1024px) {
+          background-image: url("../images/contacts/color/facebook_color.png");
+        }
 
         &:hover {
           background-image: url("../images/contacts/color/facebook_color.png");
-          cursor: pointer;
-
         }
       }
 
       &__VK {
         background-image: url("../images/contacts/bAndW/vk_BW.png");
-        border-radius: 5px;
-        width: 32px;
-        height: 32px;
-        margin-right: 10px;
+
+        @media (max-width: 1024px) {
+          background-image: url("../images/contacts/color/vk_color.png");
+        }
 
         &:hover {
           background-image: url("../images/contacts/color/vk_color.png");
-          cursor: pointer;
         }
       }
 
       &__instagram {
         background-image: url("../images/contacts/bAndW/instagram_BW.png");
+
+        @media (max-width: 1024px) {
+          background-image: url("../images/contacts/color/instagram_color.png");
+        }
+
+        &:hover {
+          background-image: url("../images/contacts/color/instagram_color.png");
+        }
+      }
+
+      &-style {
         border-radius: 5px;
         width: 32px;
         height: 32px;
         margin-right: 10px;
 
+        @media (max-width: 1024px) {
+          margin-left: 10px;
+        }
+
         &:hover {
-          background-image: url("../images/contacts/color/instagram_color.png");
           cursor: pointer;
         }
       }
@@ -97,12 +190,31 @@
   }
 
   &__payment {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+
+    @media (max-width: 1024px) {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
 
     &__header {
       margin-bottom: 20px;
 
+      @media (max-width: 1024px) {
+        margin-bottom: 0px;
+      }
+
       &__text {
         color: $font-subscription;
+
+        @media (max-width: 1024px) {
+          display: none;
+        }
       }
     }
 
@@ -110,39 +222,50 @@
       display: flex;
       align-items: center;
 
+      @media (max-width: 1024px) {
+        justify-content: center;
+      }
+
       &__yandexDengi {
         background-image: url("../images/payment/YandexMoney/yandex_dengi_product_icon_cmyk@3x.png");
-        height: 32px;
-        background-repeat: no-repeat;
-        width: 25px;
-        background-size: contain;
-        margin-right: 10px;
+        height: 20px;
+        width: 20px;
 
-        &:hover {
-          cursor: pointer;
+        @media (max-width: 1024px) {
+          width: 16px;
+          margin-left: 8px;
+          margin-right: 4px;
         }
       }
 
       &__visa {
         background-image: url("../images/payment/Visa/visa@3x.png");
-        height: 12px;
-        background-repeat: no-repeat;
+        height: 11px;
         width: 32px;
-        background-size: contain;
-        margin-right: 10px;
 
-        &:hover {
-          cursor: pointer;
+        @media (max-width: 1024px) {
+          margin: 4.5px 21px 4.5px 18px;
         }
       }
 
       &__masterCard {
         background-image: url("../images/payment/MasterCard/mastercard@3x.png");
         height: 20px;
-        background-repeat: no-repeat;
         width: 32px;
+
+        @media (max-width: 1024px) {
+          margin-left: 13px;
+        }
+      }
+
+      &-style {
+        background-repeat: no-repeat;
         background-size: contain;
         margin-right: 10px;
+
+        @media (max-width: 1024px) {
+          margin-right: 0px;
+        }
 
         &:hover {
           cursor: pointer;
