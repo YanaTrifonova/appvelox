@@ -322,6 +322,335 @@ button.nav-tgl:before {
   }
 }
 
+.footer {
+  margin: 60px auto 40px auto;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-template-rows: repeat(3, 1fr);
+  width: 1000px;
+  height: 150px;
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-row-gap: 20px;
+    max-width: 300px;
+    margin: 0px auto 40px auto;
+  }
+}
+
+.footer__aside {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+@media (max-width: 1024px) {
+  .footer__aside {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+
+.footer__aside__navigation {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-bottom: 20px;
+  width: 400px;
+}
+
+@media (max-width: 1024px) {
+  .footer__aside__navigation {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer__aside__navigation__text {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+.footer__confidential {
+  color: #606474;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+@media (max-width: 1024px) {
+  .footer__confidential {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer__confidential__name {
+    text-align: center;
+  }
+}
+
+.footer__confidential__name-link {
+  margin-left: 20px;
+}
+
+@media (max-width: 1024px) {
+  .footer__confidential__name-link {
+    display: block;
+    margin-left: 0px;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+.footer__developed {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+@media (max-width: 1024px) {
+  .footer__developed {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer__developed__text {
+    text-align: center;
+  }
+}
+
+.footer__socialNetwork {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+@media (max-width: 1024px) {
+  .footer__socialNetwork {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+
+.footer__socialNetwork__header {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+  .footer__socialNetwork__header {
+    margin-bottom: 0px;
+  }
+}
+
+.footer__socialNetwork__header__text {
+  color: #606474;
+}
+
+@media (max-width: 1024px) {
+  .footer__socialNetwork__header__text {
+    display: none;
+  }
+}
+
+.footer__socialNetwork__icons {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  .footer__socialNetwork__icons {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+}
+
+.footer__socialNetwork__icons__facebook {
+  background-image: url("../images/contacts/bAndW/facebook_BW.png");
+}
+
+@media (max-width: 1024px) {
+  .footer__socialNetwork__icons__facebook {
+    background-image: url("../images/contacts/color/facebook_color.png");
+  }
+}
+
+.footer__socialNetwork__icons__facebook:hover {
+  background-image: url("../images/contacts/color/facebook_color.png");
+}
+
+.footer__socialNetwork__icons__VK {
+  background-image: url("../images/contacts/bAndW/vk_BW.png");
+}
+
+@media (max-width: 1024px) {
+  .footer__socialNetwork__icons__VK {
+    background-image: url("../images/contacts/color/vk_color.png");
+  }
+}
+
+.footer__socialNetwork__icons__VK:hover {
+  background-image: url("../images/contacts/color/vk_color.png");
+}
+
+.footer__socialNetwork__icons__instagram {
+  background-image: url("../images/contacts/bAndW/instagram_BW.png");
+}
+
+@media (max-width: 1024px) {
+  .footer__socialNetwork__icons__instagram {
+    background-image: url("../images/contacts/color/instagram_color.png");
+  }
+}
+
+.footer__socialNetwork__icons__instagram:hover {
+  background-image: url("../images/contacts/color/instagram_color.png");
+}
+
+.footer__socialNetwork__icons-style {
+  border-radius: 5px;
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+@media (max-width: 1024px) {
+  .footer__socialNetwork__icons-style {
+    margin-left: 10px;
+  }
+}
+
+.footer__socialNetwork__icons-style:hover {
+  cursor: pointer;
+}
+
+.footer__payment {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+@media (max-width: 1024px) {
+  .footer__payment {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+}
+
+.footer__payment__header {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+  .footer__payment__header {
+    margin-bottom: 0px;
+  }
+}
+
+.footer__payment__header__text {
+  color: #606474;
+}
+
+@media (max-width: 1024px) {
+  .footer__payment__header__text {
+    display: none;
+  }
+}
+
+.footer__payment__icons {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .footer__payment__icons {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+}
+
+.footer__payment__icons__yandexDengi {
+  background-image: url("../images/payment/YandexMoney/yandex_dengi_product_icon_cmyk@3x.png");
+  height: 20px;
+  width: 20px;
+}
+
+@media (max-width: 1024px) {
+  .footer__payment__icons__yandexDengi {
+    width: 16px;
+    margin-left: 8px;
+    margin-right: 4px;
+  }
+}
+
+.footer__payment__icons__visa {
+  background-image: url("../images/payment/Visa/visa@3x.png");
+  height: 11px;
+  width: 32px;
+}
+
+@media (max-width: 1024px) {
+  .footer__payment__icons__visa {
+    margin: 4.5px 21px 4.5px 18px;
+  }
+}
+
+.footer__payment__icons__masterCard {
+  background-image: url("../images/payment/MasterCard/mastercard@3x.png");
+  height: 20px;
+  width: 32px;
+}
+
+@media (max-width: 1024px) {
+  .footer__payment__icons__masterCard {
+    margin-left: 13px;
+  }
+}
+
+.footer__payment__icons-style {
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 10px;
+}
+
+@media (max-width: 1024px) {
+  .footer__payment__icons-style {
+    margin-right: 0px;
+  }
+}
+
+.footer__payment__icons-style:hover {
+  cursor: pointer;
+}
+
 .aboutUs {
   background-image: url("../images/illustrations/main.png");
   background-position: 50% 50%;
@@ -794,331 +1123,92 @@ button.nav-tgl:before {
   }
 }
 
-.footer {
-  margin: 60px auto 40px auto;
-  display: grid;
-  grid-template-columns: 3fr 1fr 1fr;
-  grid-column-gap: 10px;
-  grid-template-rows: repeat(3, 1fr);
-  width: 1000px;
-  height: 150px;
+.questions {
+  margin: 180px auto 80px auto;
+  color: black;
+  max-width: 1000px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-@media (max-width: 1024px) {
-  .footer {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
-    grid-row-gap: 20px;
-    max-width: 300px;
-    margin: 0px auto 40px auto;
-  }
+.questions__header {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.footer__aside {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
+.questions__subscription {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #606474;
 }
 
-@media (max-width: 1024px) {
-  .footer__aside {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
+.questions__nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin: 0 auto 40px;
 }
 
-.footer__aside__navigation {
+.questions__nav__text {
+  padding: 10px 20px 10px 20px;
+  background-color: #7cba30;
+  color: #f6f5f5;
+  border: 1px solid #929391;
+  border-radius: 100px;
+  margin: 10px;
+}
+
+.questions__nav__text:hover {
+  background-color: #76BD01;
+  cursor: pointer;
+}
+
+.questions__section {
+  border: 1px solid #f6f5f5;
+  margin-bottom: 40px;
+}
+
+.questions__section:last-child {
+  margin-bottom: 0px;
+}
+
+.questions__section__header {
+  background-color: #f6f5f5;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  margin-bottom: 20px;
-  width: 400px;
+  padding: 20px;
+  border-bottom: 1px solid #f6f5f5;
 }
 
-@media (max-width: 1024px) {
-  .footer__aside__navigation {
-    -ms-flex-direction: column;
-        flex-direction: column;
-    max-width: 300px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .footer__aside__navigation__text {
-    margin-top: 20px;
-    text-align: center;
-  }
-}
-
-.footer__confidential {
-  color: #606474;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-@media (max-width: 1024px) {
-  .footer__confidential {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 5;
-    grid-row-end: 6;
-  }
-}
-
-@media (max-width: 1024px) {
-  .footer__confidential__name {
-    text-align: center;
-  }
-}
-
-.footer__confidential__name-link {
-  margin-left: 20px;
-}
-
-@media (max-width: 1024px) {
-  .footer__confidential__name-link {
-    display: block;
-    margin-left: 0px;
-    text-align: center;
-    margin-top: 20px;
-  }
-}
-
-.footer__developed {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 4;
-}
-
-@media (max-width: 1024px) {
-  .footer__developed {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 4;
-    grid-row-end: 5;
-  }
-}
-
-@media (max-width: 1024px) {
-  .footer__developed__text {
-    text-align: center;
-  }
-}
-
-.footer__socialNetwork {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 4;
-}
-
-@media (max-width: 1024px) {
-  .footer__socialNetwork {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-}
-
-.footer__socialNetwork__header {
-  margin-bottom: 20px;
-}
-
-@media (max-width: 1024px) {
-  .footer__socialNetwork__header {
-    margin-bottom: 0px;
-  }
-}
-
-.footer__socialNetwork__header__text {
-  color: #606474;
-}
-
-@media (max-width: 1024px) {
-  .footer__socialNetwork__header__text {
-    display: none;
-  }
-}
-
-.footer__socialNetwork__icons {
-  display: -ms-flexbox;
-  display: flex;
-}
-
-@media (max-width: 1024px) {
-  .footer__socialNetwork__icons {
-    -ms-flex-pack: center;
-        justify-content: center;
-  }
-}
-
-.footer__socialNetwork__icons__facebook {
-  background-image: url("../images/contacts/bAndW/facebook_BW.png");
-}
-
-@media (max-width: 1024px) {
-  .footer__socialNetwork__icons__facebook {
-    background-image: url("../images/contacts/color/facebook_color.png");
-  }
-}
-
-.footer__socialNetwork__icons__facebook:hover {
-  background-image: url("../images/contacts/color/facebook_color.png");
-}
-
-.footer__socialNetwork__icons__VK {
-  background-image: url("../images/contacts/bAndW/vk_BW.png");
-}
-
-@media (max-width: 1024px) {
-  .footer__socialNetwork__icons__VK {
-    background-image: url("../images/contacts/color/vk_color.png");
-  }
-}
-
-.footer__socialNetwork__icons__VK:hover {
-  background-image: url("../images/contacts/color/vk_color.png");
-}
-
-.footer__socialNetwork__icons__instagram {
-  background-image: url("../images/contacts/bAndW/instagram_BW.png");
-}
-
-@media (max-width: 1024px) {
-  .footer__socialNetwork__icons__instagram {
-    background-image: url("../images/contacts/color/instagram_color.png");
-  }
-}
-
-.footer__socialNetwork__icons__instagram:hover {
-  background-image: url("../images/contacts/color/instagram_color.png");
-}
-
-.footer__socialNetwork__icons-style {
-  border-radius: 5px;
-  width: 32px;
-  height: 32px;
-  margin-right: 10px;
-}
-
-@media (max-width: 1024px) {
-  .footer__socialNetwork__icons-style {
-    margin-left: 10px;
-  }
-}
-
-.footer__socialNetwork__icons-style:hover {
-  cursor: pointer;
-}
-
-.footer__payment {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 4;
-}
-
-@media (max-width: 1024px) {
-  .footer__payment {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
-  }
-}
-
-.footer__payment__header {
-  margin-bottom: 20px;
-}
-
-@media (max-width: 1024px) {
-  .footer__payment__header {
-    margin-bottom: 0px;
-  }
-}
-
-.footer__payment__header__text {
-  color: #606474;
-}
-
-@media (max-width: 1024px) {
-  .footer__payment__header__text {
-    display: none;
-  }
-}
-
-.footer__payment__icons {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-}
-
-@media (max-width: 1024px) {
-  .footer__payment__icons {
-    -ms-flex-pack: center;
-        justify-content: center;
-  }
-}
-
-.footer__payment__icons__yandexDengi {
-  background-image: url("../images/payment/YandexMoney/yandex_dengi_product_icon_cmyk@3x.png");
-  height: 20px;
+.questions__section__header__img {
+  transition-duration: .8s;
+  transition-property: transform;
   width: 20px;
-}
-
-@media (max-width: 1024px) {
-  .footer__payment__icons__yandexDengi {
-    width: 16px;
-    margin-left: 8px;
-    margin-right: 4px;
-  }
-}
-
-.footer__payment__icons__visa {
-  background-image: url("../images/payment/Visa/visa@3x.png");
-  height: 11px;
-  width: 32px;
-}
-
-@media (max-width: 1024px) {
-  .footer__payment__icons__visa {
-    margin: 4.5px 21px 4.5px 18px;
-  }
-}
-
-.footer__payment__icons__masterCard {
-  background-image: url("../images/payment/MasterCard/mastercard@3x.png");
   height: 20px;
-  width: 32px;
 }
 
-@media (max-width: 1024px) {
-  .footer__payment__icons__masterCard {
-    margin-left: 13px;
-  }
+.questions__section__article {
+  opacity: 1;
+  height: auto;
 }
 
-.footer__payment__icons-style {
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-right: 10px;
+.questions__section__article-hide {
+  transition: max-height 0.8s cubic-bezier(0.01, 0.76, 0.07, 0.96);
+  max-height: 0;
+  overflow: hidden;
 }
 
-@media (max-width: 1024px) {
-  .footer__payment__icons-style {
-    margin-right: 0px;
-  }
+.questions__section__article__text {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.footer__payment__icons-style:hover {
-  cursor: pointer;
+.questions__section__article__text:last-child {
+  padding-bottom: 20px;
 }
