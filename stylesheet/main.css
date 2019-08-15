@@ -733,11 +733,10 @@ button.nav-tgl:before {
 
 @media (max-width: 1024px) {
   .situation__nav {
-    overflow-x: scroll;
-    width: 900px;
-    white-space: nowrap;
-    overflow-y: hidden;
     margin-left: 300px;
+    overflow: auto;
+    white-space: nowrap;
+    width: auto;
   }
 }
 
@@ -758,6 +757,14 @@ button.nav-tgl:before {
   padding-bottom: 20px;
   font-size: 1.4rem;
   color: #606474;
+}
+
+@media (max-width: 1024px) {
+  .situation__nav__roll {
+    display: inline-block;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
 }
 
 .situation__nav__roll:hover {
@@ -877,6 +884,7 @@ button.nav-tgl:before {
 @media (max-width: 1024px) {
   .howDoWeWork__section__img {
     width: 300px;
+    height: auto;
     margin: 0 auto;
   }
 }

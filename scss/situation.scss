@@ -14,11 +14,10 @@
     justify-content: space-between;
 
     @media (max-width: 1024px) {
-      overflow-x: scroll;
-      width: 900px;
-      white-space: nowrap;
-      overflow-y: hidden;
       margin-left: 300px;
+      overflow: auto;
+      white-space: nowrap;
+      width: auto;
     }
 
     @media (max-width: 768px) {
@@ -34,6 +33,12 @@
       padding-bottom: 20px;
       font-size: 1.4rem;
       color: $font-subscription;
+
+      @media (max-width: 1024px) {
+        display: inline-block;
+        margin-right: 30px;
+        margin-left: 30px;
+      }
 
       &:hover {
         cursor: pointer;
