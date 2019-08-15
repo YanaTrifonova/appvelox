@@ -6,9 +6,16 @@
   color: $font-main;
   border-bottom: 1px solid $color-light;
   box-shadow: 0 3px 8px $color-light;
-  z-index: 1;
-  position: relative;
+  z-index: 10000;
+  transition: top 0.43s ease-in-out;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: white;
 
+  &__nav-up {
+    top: -100px;
+  }
 
   &-display {
     height: 100vh;
@@ -145,6 +152,7 @@
       background: #293335;
       transition: all 200ms;
     }
+
     &:before {
       top: -11px;
       left: 0px;
@@ -158,7 +166,9 @@
     }
   }
 
-  &:focus {outline: none}
+  &:focus {
+    outline: none
+  }
 }
 
 .menu.active {
@@ -169,25 +179,30 @@
 
   .nav-tgl > span {
     height: 0;
+
     &:after, &:before {
       top: 0px;
       left: 0;
       width: 34px;
     }
+
     &:after {
       transform: rotate(-45deg);
     }
+
     &:before {
       transform: rotate(45deg);
     }
   }
 }
+
 .active {
   position: fixed;
   z-index: 1;
   top: 15px;
   right: 0px;
 }
+
 .menu {
   padding-right: 20px;
 

@@ -72,8 +72,16 @@ hr {
   color: black;
   border-bottom: 1px solid #dddddd;
   box-shadow: 0 3px 8px #dddddd;
-  z-index: 1;
-  position: relative;
+  z-index: 10000;
+  transition: top 0.43s ease-in-out;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: white;
+}
+
+.header__nav-up {
+  top: -100px;
 }
 
 .header-display {
@@ -321,9 +329,10 @@ button.nav-tgl:before {
   width: auto;
   background-size: cover;
   padding-bottom: 50px;
-  padding-top: 65px;
+  padding-top: 150px;
   display: -ms-flexbox;
   display: flex;
+  height: 500px;
 }
 
 .aboutUs__content {

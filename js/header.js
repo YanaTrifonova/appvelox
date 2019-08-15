@@ -19,3 +19,43 @@ btn.addEventListener('click', evt => {
         header.classList.add('header-hidden');
     }
 });
+
+//script for header hide and show
+
+let didScroll;
+let lastScrollTop = 0;
+let delta = 5;
+let navbarHeight = $('header').outerHeight();
+
+$(window).scroll(function (event) {
+    didScroll = true;
+});
+
+setInterval(function () {
+    if (didScroll && window.pageYOffset > 500) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 20);
+
+function hasScrolled() {
+    let st = $(this).scrollTop();
+
+    // Make sure they scroll more than delta
+    if (Math.abs(lastScrollTop - st) <= delta)
+        return;
+
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight) {
+        // Scroll Down
+        $('header').addClass('header__nav-up');
+    } else {
+        // Scroll Up
+        if (st + $(window).height() < $(document).height()) {
+            $('header').removeClass('header__nav-up');
+        }
+    }
+
+    lastScrollTop = st;
+}
