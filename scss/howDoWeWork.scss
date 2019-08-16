@@ -1,6 +1,10 @@
 .howDoWeWork {
   margin-bottom: 60px;
 
+  @media (max-width: 1024px) {
+    margin-bottom: 35px;
+  }
+
   &__header {
     margin-top: 60px;
     text-align: center;

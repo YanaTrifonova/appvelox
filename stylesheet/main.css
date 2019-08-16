@@ -860,6 +860,12 @@ button.nav-tgl:before {
   margin-bottom: 60px;
 }
 
+@media (max-width: 1024px) {
+  .howDoWeWork {
+    margin-bottom: 35px;
+  }
+}
+
 .howDoWeWork__header {
   margin-top: 60px;
   text-align: center;
@@ -979,6 +985,12 @@ button.nav-tgl:before {
   text-align: center;
 }
 
+@media (max-width: 1024px) {
+  .specialist__card {
+    margin: 20px;
+  }
+}
+
 .specialist__card__img {
   border-radius: 50%;
   height: 100px;
@@ -1004,6 +1016,21 @@ button.nav-tgl:before {
   position: relative !important;
   margin-top: 40px;
   margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+  #specialist__pagination__override {
+    margin-bottom: 0px;
+    padding-bottom: 40px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #specialist__button1__override,
+  #specialist__button2__override {
+    top: 87%;
+  }
 }
 
 .blog {

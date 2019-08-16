@@ -4,6 +4,10 @@
     margin: 70px;
     text-align: center;
 
+    @media (max-width: 1024px) {
+      margin: 20px;
+    }
+
     &__img {
       border-radius: 50%;
       height: 100px;
@@ -33,3 +37,19 @@
   }
 }
 
+//override
+
+#specialist__pagination__override {
+  @media (max-width: 1024px) {
+    margin-bottom: 0px;
+    padding-bottom: 40px;
+    margin-top: 20px;
+  }
+}
+
+#specialist__button1__override,
+#specialist__button2__override {
+  @media (max-width: 1024px) {
+    top: 87%;
+  }
+}
