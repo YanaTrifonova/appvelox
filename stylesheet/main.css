@@ -981,6 +981,10 @@ button.nav-tgl:before {
   }
 }
 
+.remove-swiper-pagination {
+  display: none;
+}
+
 .specialist__card {
   margin: 70px;
   text-align: center;

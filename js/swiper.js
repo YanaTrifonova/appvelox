@@ -1,7 +1,7 @@
 window.onload = function () {
 
     if (window.innerWidth < 1024) {
-        var swiperSpecialist = new Swiper('.swiper-container-s', {
+        window.swiperSpecialist = new Swiper('.swiper-container-s', {
             slidesPerView: 1,
             spaceBetween: 10,
             pagination: {
@@ -14,7 +14,7 @@ window.onload = function () {
             },
         });
     } else {
-        var swiperSpecialist = new Swiper('.swiper-container-s', {
+        window.swiperSpecialist = new Swiper('.swiper-container-s', {
             slidesPerView: 3,
             spaceBetween: 10,
             pagination: {
@@ -34,8 +34,22 @@ function applySwiper(isResize) {
     if (window.innerWidth < 1024) {
         if (isResize) {
             modifyClasses(false);
+            window.swiperSpecialist.destroy(true, true);
+            window.swiperSpecialist = new Swiper('.swiper-container-s', {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                pagination: {
+                    el: '.swiper-pagination-s',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next-s',
+                    prevEl: '.swiper-button-prev-s',
+                },
+            })
+
         }
-        var swiperSituation = new Swiper('.swiper-container-howDoWeWork', {
+        window.swiperSituation = new Swiper('.swiper-container-howDoWeWork', {
             slidesPerView: 1,
             spaceBetween: 10,
             pagination: {
@@ -49,6 +63,28 @@ function applySwiper(isResize) {
         });
     } else if (!isResize) {
         modifyClasses(true);
+    } else if (window.innerWidth > 1024) {
+        if (isResize) {
+
+            window.swiperSpecialist.destroy(true, true);
+            window.swiperSpecialist = new Swiper('.swiper-container-s', {
+                slidesPerView: 3,
+                spaceBetween: 10,
+                pagination: {
+                    el: '.swiper-pagination-s',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next-s',
+                    prevEl: '.swiper-button-prev-s',
+                },
+            });
+            if (window.swiperSituation !== undefined) {
+
+                window.swiperSituation.destroy(true, true);
+                modifyClasses(true);
+            }
+        }
     }
 }
 
