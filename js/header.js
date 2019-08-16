@@ -36,7 +36,7 @@ setInterval(function () {
         hasScrolled();
         didScroll = false;
     }
-}, 200);
+}, 20);
 
 function hasScrolled() {
     let st = $(this).scrollTop();

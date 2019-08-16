@@ -396,6 +396,7 @@ button.nav-tgl:before {
     grid-column-end: 2;
     grid-row-start: 5;
     grid-row-end: 6;
+    margin-bottom: 40px;
   }
 }
 
@@ -1178,6 +1179,7 @@ button.nav-tgl:before {
 
 .trustUs__container__img {
   height: 70px;
+  width: auto;
   margin-right: 30px;
 }
 
@@ -1332,4 +1334,10 @@ button.nav-tgl:before {
 
 .form-tel {
   margin-bottom: 20px;
+}
+
+.form-question {
+  max-width: 400px;
+  min-width: 241px;
+  min-height: 44px;
 }
