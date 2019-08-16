@@ -12,7 +12,7 @@
     display: flex;
 
     @media (max-width: 1024px) {
-      margin-bottom: 100px;
+      margin-bottom: 60px;
     }
 
     &-up {
@@ -85,5 +85,20 @@
   &__pagination {
     top: unset;
     position: unset;
+  }
+}
+
+//override properties for pagination buttons for swiper
+
+#pagination__override {
+  @media (max-width: 1024px) {
+    margin-bottom: 10px;
+  }
+}
+
+#button1__override,
+#button2__override {
+  @media (max-width: 1024px) {
+    top: 95%;
   }
 }

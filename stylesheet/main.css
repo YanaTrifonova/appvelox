@@ -874,7 +874,7 @@ button.nav-tgl:before {
 
 @media (max-width: 1024px) {
   .howDoWeWork__section {
-    margin-bottom: 100px;
+    margin-bottom: 60px;
   }
 }
 
@@ -959,6 +959,19 @@ button.nav-tgl:before {
 .howDoWeWork__pagination {
   top: unset;
   position: unset;
+}
+
+@media (max-width: 1024px) {
+  #pagination__override {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #button1__override,
+  #button2__override {
+    top: 95%;
+  }
 }
 
 .specialist__card {
