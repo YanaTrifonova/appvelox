@@ -1,4 +1,3 @@
-
 function getStyleVal(elem, style) {
     return Number(window.getComputedStyle(elem).getPropertyValue(style).slice(0, -2))
 }
@@ -21,9 +20,7 @@ function moveSlide(e) {
             }
             ind += 1;
         }
-        //let sliderWidth = paddingSlider + e.offsetWidth;
         slider.style.marginLeft = paddingSlider + "px";
         slider.style.width = e.offsetWidth + "px";
     }
-
 }

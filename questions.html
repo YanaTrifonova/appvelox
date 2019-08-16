@@ -31,15 +31,23 @@
     <article class="questions">
         <h1 class="questions__header">Часто задаваемые вопросы</h1>
         <h3 class="questions__subscription">В этом разделе мы собрали самые часто задаваемые вопросы.</h3>
-        <nav class="questions__nav">
-            <h5 class="questions__nav__text">Все</h5>
-            <h5 class="questions__nav__text">Кризис</h5>
-            <h5 class="questions__nav__text">Семья</h5>
-            <h5 class="questions__nav__text">Дети</h5>
-            <h5 class="questions__nav__text">Коммуникация</h5>
-            <h5 class="questions__nav__text">Мужчина</h5>
-            <h5 class="questions__nav__text">Женщина</h5>
-            <h5 class="questions__nav__text">Развитие</h5>
+        <nav class="questions__nav" id="nav">
+            <a onclick="filter('questions__section-all')">
+                <h5 class="questions__nav__text">Все</h5></a>
+            <a onclick="filter('questions__section-crisis')">
+                <h5 class="questions__nav__text">Кризис</h5></a>
+            <a onclick="filter('questions__section-family')">
+                <h5 class="questions__nav__text">Семья</h5></a>
+            <a onclick="filter('questions__section-children')">
+                <h5 class="questions__nav__text">Дети</h5></a>
+            <a onclick="filter('questions__section-communication')">
+                <h5 class="questions__nav__text">Коммуникация</h5></a>
+            <a onclick="filter('questions__section-men')">
+                <h5 class="questions__nav__text">Мужчина</h5></a>
+            <a onclick="filter('questions__section-women')">
+                <h5 class="questions__nav__text">Женщина</h5></a>
+            <a onclick="filter('questions__section-growth')">
+                <h5 class="questions__nav__text">Развитие</h5></a>
         </nav>
         <section class="questions__section questions__section-all questions__section-crisis">
             <div class="questions__section__header" onclick="articleShowAndHide(1)">
@@ -367,26 +375,31 @@
 </footer>
 <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
     <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title" aria-describedby="modal-1-content">
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title"
+             aria-describedby="modal-1-content">
             <div role="document">
                 <header class="modal__header">
                     <h2 class="modal__title" id="modal-1-title">Вопрос</h2>
-                    <button class="modal__close" aria-label="Close modal" aria-controls="modal__container1" data-micromodal-close></button>
+                    <button class="modal__close" aria-label="Close modal" aria-controls="modal__container1"
+                            data-micromodal-close></button>
                 </header>
                 <main class="modal__content" id="modal-1-content">
                     <form class="form">
                         <input class="form-name form-input" type="text" name="name" placeholder="Ваше имя" required>
-                        <input class="form-email form-input" type="email" name="email" placeholder="Ваша электронная почта">
+                        <input class="form-email form-input" type="email" name="email"
+                               placeholder="Ваша электронная почта">
                         <input class="form-tel form-input" type="tel" name="phone"
                                pattern="[0-9]{11}"
                                placeholder="89112732440"
                                required>
-                        <textarea class="form-question form-input" name="question" placeholder="Ваш вопрос..."></textarea>
+                        <textarea class="form-question form-input" name="question"
+                                  placeholder="Ваш вопрос..."></textarea>
                     </form>
                 </main>
                 <footer class="modal__footer">
                     <button class="modal__btn modal__btn-primary">Отправить</button>
-                    <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Отмена</button>
+                    <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Отмена
+                    </button>
                 </footer>
             </div>
         </div>
@@ -395,6 +408,7 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/header.js"></script>
+<script src="js/filter.js"></script>
 <script src="js/questions.js"></script>
 <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
 <script src="js/popUp.js"></script>

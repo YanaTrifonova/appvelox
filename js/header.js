@@ -36,7 +36,7 @@ setInterval(function () {
         hasScrolled();
         didScroll = false;
     }
-}, 20);
+}, 200);
 
 function hasScrolled() {
     let st = $(this).scrollTop();
@@ -59,9 +59,3 @@ function hasScrolled() {
 
     lastScrollTop = st;
 }
-
-let sliderInit = document.getElementById("crisisMenu");
-let slider = document.getElementById("slider");
-slider.style.transitionProperty = "None";
-moveSlide(sliderInit);
-slider.style.transitionProperty = null;

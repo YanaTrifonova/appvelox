@@ -1,4 +1,3 @@
-
 function changeCard(e) {
     let parent = document.getElementById("sections_situation");
 
