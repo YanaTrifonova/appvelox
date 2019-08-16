@@ -1,9 +1,15 @@
 .situation {
   background: $gradient;
 
+  @media (max-width: 768px) {
+    margin-top: 180px;
+  }
+
   &__header {
     margin-top: 60px;
     text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   &__nav {
@@ -11,7 +17,6 @@
     width: 800px;
     flex-direction: row;
     display: flex;
-    justify-content: space-between;
 
     @media (max-width: 1024px) {
       margin-left: 300px;
@@ -33,6 +38,8 @@
       padding-bottom: 20px;
       font-size: 1.4rem;
       color: $font-subscription;
+      display: flex;
+      margin: 0 auto;
 
       @media (max-width: 1024px) {
         display: inline-block;
@@ -45,7 +52,7 @@
       }
 
       &-active {
-        border-bottom: 3px solid $color-green;
+        //border-bottom: 3px solid $color-green;
       }
     }
   }
@@ -101,5 +108,16 @@
 
   &__hide {
     display: none;
+  }
+}
+
+.situation__nav__slider {
+  height: 3px;
+  width: 0px;
+  background-color: $color-green;
+  transition: all 1s ease;
+  @media (max-width: 1024px) {
+    display: none;
+
   }
 }

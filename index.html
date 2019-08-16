@@ -39,103 +39,107 @@
     <article class="situation">
         <h2 class="situation__header">В каких ситуациях можно обратиться к нам</h2>
         <nav class="situation__nav">
-            <a class="situation__nav__roll situation__nav__roll-active" id="crisisMenu" onclick="changeCard(1)">
+            <a class="situation__nav__roll situation__nav__roll-active" id="crisisMenu" onclick="changeCard(this)">
                 Кризис</a>
-            <a class="situation__nav__roll" id="familyMenu" onclick="changeCard(2)">Семья</a>
-            <a class="situation__nav__roll" id="childrenMenu" onclick="changeCard(3)">Дети</a>
-            <a class="situation__nav__roll" id="communicationMenu" onclick="changeCard(4)">Коммуникации</a>
-            <a class="situation__nav__roll" id="menAndWomenMenu" onclick="changeCard(5)">Мужчина и женщина</a>
-            <a class="situation__nav__roll" id="growthMenu" onclick="changeCard(6)">Развитие</a>
+            <a class="situation__nav__roll" id="familyMenu" onclick="changeCard(this)">Семья</a>
+            <a class="situation__nav__roll" id="childrenMenu" onclick="changeCard(this)">Дети</a>
+            <a class="situation__nav__roll" id="communicationMenu" onclick="changeCard(this)">Коммуникации</a>
+            <a class="situation__nav__roll" id="menAndWomenMenu" onclick="changeCard(this)">Мужчина и женщина</a>
+            <a class="situation__nav__roll" id="growthMenu" onclick="changeCard(this)">Развитие</a>
         </nav>
+        <div id="slider" class="situation__nav__slider"></div>
         <hr/>
-        <section class="situation__card" id="crisis">
-            <img class="situation__card__img" src="images/icons/piggy-bank@3x.png" alt="crisis">
-            <div class="situation__card__text">
-                <h3 class="situation__card__text__header">Выслушаем и поддержим в трудной жизненной ситуации, стрессе,
-                    кризисе, поможем справиться с душевной болью. Поможем выявить причины кризиса, мобилизовать душевные
-                    силы</h3>
-                <ul class="situation__card__text__tags">
-                    <li class="situation__card__text__tags-item">Зависимости и вредные привычки</li>
-                    <li class="situation__card__text__tags-item">Переживание потери близких</li>
-                    <li class="situation__card__text__tags-item">Страхи, Проблемы здоровья</li>
-                    <li class="situation__card__text__tags-item">Кризисы возраста</li>
-                    <li class="situation__card__text__tags-item">Стресс, Апатия, Тревоги</li>
-                </ul>
-            </div>
-        </section>
-        <section class="situation__card situation__hide" id="family">
-            <img class="situation__card__img" src="images/icons/family.png" alt="family">
-            <div class="situation__card__text">
-                <h3 class="situation__card__text__header">Поможем в поиске путей разрешения бытового семейного
-                    конфликта, найти и устранить причины конфликтов, сгладить проблемы поколений. Поможем найти пути
-                    восстановления целостности семьи</h3>
-                <ul class="situation__card__text__tags">
-                    <li class="situation__card__text__tags-item">Супружеские проблемы</li>
-                    <li class="situation__card__text__tags-item">Переживание развода</li>
-                    <li class="situation__card__text__tags-item">Домашнее насилие</li>
-                    <li class="situation__card__text__tags-item">Нарушение гармонии в семье</li>
-                    <li class="situation__card__text__tags-item">Переживание измены</li>
-                </ul>
-            </div>
-        </section>
-        <section class="situation__card situation__hide" id="children">
-            <img class="situation__card__img" src="images/icons/baby.png" alt="baby">
-            <div class="situation__card__text">
-                <h3 class="situation__card__text__header">Разъясним особенности поведения детей, поможем установить
-                    контакт с трудным подростком, поможем понять причины непослушания. Ответим на вопросы особенностей
-                    воспитания</h3>
-                <ul class="situation__card__text__tags">
-                    <li class="situation__card__text__tags-item">Зависимость от интернета и компьютерных игр</li>
-                    <li class="situation__card__text__tags-item">Учебные трудности</li>
-                    <li class="situation__card__text__tags-item">Проблемные подростки</li>
-                    <li class="situation__card__text__tags-item">Проблема отцов и детей</li>
-                    <li class="situation__card__text__tags-item">Воспитание детей</li>
-                </ul>
-            </div>
-        </section>
-        <section class="situation__card situation__hide" id="communication">
-            <img class="situation__card__img" src="images/icons/conversation.png" alt="conversation">
-            <div class="situation__card__text">
-                <h3 class="situation__card__text__header">Научим навыкам эффективного общения, преодоления комплексов.
-                    Поможем найти компромиссы, способы улаживания конфликтов</h3>
-                <ul class="situation__card__text__tags">
-                    <li class="situation__card__text__tags-item">Низкая самооценка</li>
-                    <li class="situation__card__text__tags-item">Конфликты</li>
-                    <li class="situation__card__text__tags-item">Неуверенность в общении</li>
-                    <li class="situation__card__text__tags-item">Одиночество</li>
-                    <li class="situation__card__text__tags-item">Трудности знакомства</li>
-                </ul>
-            </div>
-        </section>
-        <section class="situation__card situation__hide" id="menAndWomen">
-            <img class="situation__card__img" src="images/icons/gender.png" alt="men and women">
-            <div class="situation__card__text">
-                <h3 class="situation__card__text__header">Поможем наладить гармонию пары, внести осознанность в
-                    отношения, научим умению слушать и слышать партнера. Поможем пережить измену, расставание и укрепить
-                    брачный союз</h3>
-                <ul class="situation__card__text__tags">
-                    <li class="situation__card__text__tags-item">Созависимые отношения</li>
-                    <li class="situation__card__text__tags-item">Трудности знакомства</li>
-                    <li class="situation__card__text__tags-item">Переживание измены или разрыва</li>
-                    <li class="situation__card__text__tags-item">Неразделенная любовь</li>
-                </ul>
-            </div>
-        </section>
-        <section class="situation__card situation__hide" id="growth">
-            <img class="situation__card__img" src="images/icons/conversation.png" alt="conversation">
-            <div class="situation__card__text">
-                <h3 class="situation__card__text__header">Поможем сформировать личную жизненную стратегию, раскрыть
-                    профессиональный потенциал, определить приоритеты развития и пути их достижения. Поможем ответить на
-                    вопросы самопознания</h3>
-                <ul class="situation__card__text__tags">
-                    <li class="situation__card__text__tags-item">Трудности личностного роста</li>
-                    <li class="situation__card__text__tags-item">Трудности профессионального роста</li>
-                    <li class="situation__card__text__tags-item">Жизненные цели</li>
-                    <li class="situation__card__text__tags-item">Вопросы карьеры</li>
-                    <li class="situation__card__text__tags-item">Проблемы принятия себя</li>
-                </ul>
-            </div>
-        </section>
+        <div id = "sections_situation">
+            <section class="situation__card" id="crisis">
+                <img class="situation__card__img" src="images/icons/piggy-bank@3x.png" alt="crisis">
+                <div class="situation__card__text">
+                    <h3 class="situation__card__text__header">Выслушаем и поддержим в трудной жизненной ситуации, стрессе,
+                        кризисе, поможем справиться с душевной болью. Поможем выявить причины кризиса, мобилизовать душевные
+                        силы</h3>
+                    <ul class="situation__card__text__tags">
+                        <li class="situation__card__text__tags-item">Зависимости и вредные привычки</li>
+                        <li class="situation__card__text__tags-item">Переживание потери близких</li>
+                        <li class="situation__card__text__tags-item">Страхи, Проблемы здоровья</li>
+                        <li class="situation__card__text__tags-item">Кризисы возраста</li>
+                        <li class="situation__card__text__tags-item">Стресс, Апатия, Тревоги</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="situation__card situation__hide" id="family">
+                <img class="situation__card__img" src="images/icons/family.png" alt="family">
+                <div class="situation__card__text">
+                    <h3 class="situation__card__text__header">Поможем в поиске путей разрешения бытового семейного
+                        конфликта, найти и устранить причины конфликтов, сгладить проблемы поколений. Поможем найти пути
+                        восстановления целостности семьи</h3>
+                    <ul class="situation__card__text__tags">
+                        <li class="situation__card__text__tags-item">Супружеские проблемы</li>
+                        <li class="situation__card__text__tags-item">Переживание развода</li>
+                        <li class="situation__card__text__tags-item">Домашнее насилие</li>
+                        <li class="situation__card__text__tags-item">Нарушение гармонии в семье</li>
+                        <li class="situation__card__text__tags-item">Переживание измены</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="situation__card situation__hide" id="children">
+                <img class="situation__card__img" src="images/icons/baby.png" alt="baby">
+                <div class="situation__card__text">
+                    <h3 class="situation__card__text__header">Разъясним особенности поведения детей, поможем установить
+                        контакт с трудным подростком, поможем понять причины непослушания. Ответим на вопросы особенностей
+                        воспитания</h3>
+                    <ul class="situation__card__text__tags">
+                        <li class="situation__card__text__tags-item">Зависимость от интернета и компьютерных игр</li>
+                        <li class="situation__card__text__tags-item">Учебные трудности</li>
+                        <li class="situation__card__text__tags-item">Проблемные подростки</li>
+                        <li class="situation__card__text__tags-item">Проблема отцов и детей</li>
+                        <li class="situation__card__text__tags-item">Воспитание детей</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="situation__card situation__hide" id="communication">
+                <img class="situation__card__img" src="images/icons/conversation.png" alt="conversation">
+                <div class="situation__card__text">
+                    <h3 class="situation__card__text__header">Научим навыкам эффективного общения, преодоления комплексов.
+                        Поможем найти компромиссы, способы улаживания конфликтов</h3>
+                    <ul class="situation__card__text__tags">
+                        <li class="situation__card__text__tags-item">Низкая самооценка</li>
+                        <li class="situation__card__text__tags-item">Конфликты</li>
+                        <li class="situation__card__text__tags-item">Неуверенность в общении</li>
+                        <li class="situation__card__text__tags-item">Одиночество</li>
+                        <li class="situation__card__text__tags-item">Трудности знакомства</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="situation__card situation__hide" id="menAndWomen">
+                <img class="situation__card__img" src="images/icons/gender.png" alt="men and women">
+                <div class="situation__card__text">
+                    <h3 class="situation__card__text__header">Поможем наладить гармонию пары, внести осознанность в
+                        отношения, научим умению слушать и слышать партнера. Поможем пережить измену, расставание и укрепить
+                        брачный союз</h3>
+                    <ul class="situation__card__text__tags">
+                        <li class="situation__card__text__tags-item">Созависимые отношения</li>
+                        <li class="situation__card__text__tags-item">Трудности знакомства</li>
+                        <li class="situation__card__text__tags-item">Переживание измены или разрыва</li>
+                        <li class="situation__card__text__tags-item">Неразделенная любовь</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="situation__card situation__hide" id="growth">
+                <img class="situation__card__img" src="images/icons/conversation.png" alt="conversation">
+                <div class="situation__card__text">
+                    <h3 class="situation__card__text__header">Поможем сформировать личную жизненную стратегию, раскрыть
+                        профессиональный потенциал, определить приоритеты развития и пути их достижения. Поможем ответить на
+                        вопросы самопознания</h3>
+                    <ul class="situation__card__text__tags">
+                        <li class="situation__card__text__tags-item">Трудности личностного роста</li>
+                        <li class="situation__card__text__tags-item">Трудности профессионального роста</li>
+                        <li class="situation__card__text__tags-item">Жизненные цели</li>
+                        <li class="situation__card__text__tags-item">Вопросы карьеры</li>
+                        <li class="situation__card__text__tags-item">Проблемы принятия себя</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
     </article>
     <article class="howDoWeWork">
         <h2 class="howDoWeWork__header">Как мы работаем</h2>
@@ -379,7 +383,9 @@
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="js/header.js"></script>
+<script src="js/moveSlider.js"></script>
 <script src="js/swiper.js"></script>
+<script src="js/header.js"></script>
+
 <script src="js/situation.js"></script>
 </html>

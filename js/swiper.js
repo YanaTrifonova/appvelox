@@ -12,9 +12,6 @@ window.onload = function () {
         },
     });
 
-    window.onresize = function () {
-        applySwiper(true);
-    };
     applySwiper(false);
 
 };
@@ -59,7 +56,6 @@ function modifyClasses(isAddition) {
                 e.classList.add(newClass);
                 e.classList.remove(p);
             }
-
         });
         arrRoot[indRoot] = e;
     })

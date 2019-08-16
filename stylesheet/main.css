@@ -715,9 +715,17 @@ button.nav-tgl:before {
   background: linear-gradient(0deg, #f3f3f3 0%, white 100%);
 }
 
+@media (max-width: 768px) {
+  .situation {
+    margin-top: 180px;
+  }
+}
+
 .situation__header {
   margin-top: 60px;
   text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .situation__nav {
@@ -727,8 +735,6 @@ button.nav-tgl:before {
       flex-direction: row;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
 }
 
 @media (max-width: 1024px) {
@@ -757,6 +763,9 @@ button.nav-tgl:before {
   padding-bottom: 20px;
   font-size: 1.4rem;
   color: #606474;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
 }
 
 @media (max-width: 1024px) {
@@ -769,10 +778,6 @@ button.nav-tgl:before {
 
 .situation__nav__roll:hover {
   cursor: pointer;
-}
-
-.situation__nav__roll-active {
-  border-bottom: 3px solid #7cba30;
 }
 
 .situation__card {
@@ -836,6 +841,19 @@ button.nav-tgl:before {
 
 .situation__hide {
   display: none;
+}
+
+.situation__nav__slider {
+  height: 3px;
+  width: 0px;
+  background-color: #7cba30;
+  transition: all 1s ease;
+}
+
+@media (max-width: 1024px) {
+  .situation__nav__slider {
+    display: none;
+  }
 }
 
 .howDoWeWork {
@@ -1219,4 +1237,19 @@ button.nav-tgl:before {
 
 .questions__section__article__text:last-child {
   padding-bottom: 20px;
+}
+
+.aside {
+  width: 1000px;
+  margin: 0 auto 60px auto;
+  text-align: center;
+  line-height: 32px;
+}
+
+.aside-bold {
+  font-weight: bold;
+}
+
+.aside-bold:hover {
+  cursor: pointer;
 }

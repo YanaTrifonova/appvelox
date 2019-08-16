@@ -1,0 +1,14 @@
+.aside {
+  width: 1000px;
+  margin: 0 auto 60px auto;
+  text-align: center;
+  line-height: 32px;
+
+  &-bold {
+    font-weight: bold;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
