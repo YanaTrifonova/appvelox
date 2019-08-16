@@ -758,6 +758,19 @@ button.nav-tgl:before {
   }
 }
 
+.situation__nav__slider {
+  height: 3px;
+  width: 0px;
+  background-color: #7cba30;
+  transition: all 1s cubic-bezier(0.01, 0.76, 0.07, 0.96);
+}
+
+@media (max-width: 1024px) {
+  .situation__nav__slider {
+    display: none;
+  }
+}
+
 .situation__nav__roll {
   text-transform: uppercase;
   padding-bottom: 20px;
@@ -841,19 +854,6 @@ button.nav-tgl:before {
 
 .situation__hide {
   display: none;
-}
-
-.situation__nav__slider {
-  height: 3px;
-  width: 0px;
-  background-color: #7cba30;
-  transition: all 1s ease;
-}
-
-@media (max-width: 1024px) {
-  .situation__nav__slider {
-    display: none;
-  }
 }
 
 .howDoWeWork {

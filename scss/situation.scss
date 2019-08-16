@@ -33,6 +33,16 @@
       margin-left: 100px;
     }
 
+    &__slider {
+      height: 3px;
+      width: 0px;
+      background-color: $color-green;
+      transition: all 1s cubic-bezier(0.01, 0.76, 0.07, 0.96);
+      @media (max-width: 1024px) {
+        display: none;
+      }
+    }
+
     &__roll {
       text-transform: uppercase;
       padding-bottom: 20px;
@@ -49,10 +59,6 @@
 
       &:hover {
         cursor: pointer;
-      }
-
-      &-active {
-        //border-bottom: 3px solid $color-green;
       }
     }
   }
@@ -108,16 +114,5 @@
 
   &__hide {
     display: none;
-  }
-}
-
-.situation__nav__slider {
-  height: 3px;
-  width: 0px;
-  background-color: $color-green;
-  transition: all 1s ease;
-  @media (max-width: 1024px) {
-    display: none;
-
   }
 }
