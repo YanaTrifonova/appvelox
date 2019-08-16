@@ -1,0 +1,22 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &-input {
+    border: 1px solid $color-light;
+    padding: 13px;
+    font-size: 1.5rem;
+  }
+
+  &-name {
+    margin-bottom: 20px;
+  }
+
+  &-email {
+    margin-bottom: 20px;
+  }
+
+  &-tel {
+    margin-bottom: 20px;
+  }
+}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <link href="stylesheet/main.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="stylesheet/micromodal.css">
     <title>Понимаю|Вопросы</title>
 </head>
 <body>
@@ -314,7 +315,7 @@
 </main>
 <aside>
     <h3 class="aside">Если вы не нашли нужную информацию, то задайте свой вопрос,
-        <span class="aside-bold"><a>заполнив форму</a></span>
+        <span class="aside-bold"><a data-micromodal-trigger="modal-1">заполнив форму</a></span>
         или по телефону
         <span class="aside-bold"><a href="tel:79681341212">+7 (968) 134-12-12,</a></span> мы с радостью ответим на него
     </h3>
@@ -364,8 +365,37 @@
         </div>
     </div>
 </footer>
+<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title" aria-describedby="modal-1-content">
+            <div role="document">
+                <header class="modal__header">
+                    <h2 class="modal__title" id="modal-1-title">Вопрос</h2>
+                    <button class="modal__close" aria-label="Close modal" aria-controls="modal__container1" data-micromodal-close></button>
+                </header>
+                <main class="modal__content" id="modal-1-content">
+                    <form class="form">
+                        <input class="form-name form-input" type="text" name="name" placeholder="Ваше имя" required>
+                        <input class="form-email form-input" type="email" name="email" placeholder="Ваша электронная почта">
+                        <input class="form-tel form-input" type="tel" name="phone"
+                               pattern="[0-9]{11}"
+                               placeholder="89112732440"
+                               required>
+                        <textarea class="form-question form-input" name="question" placeholder="Ваш вопрос..."></textarea>
+                    </form>
+                </main>
+                <footer class="modal__footer">
+                    <button class="modal__btn modal__btn-primary">Отправить</button>
+                    <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Отмена</button>
+                </footer>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/header.js"></script>
 <script src="js/questions.js"></script>
+<script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+<script src="js/popUp.js"></script>
 </html>

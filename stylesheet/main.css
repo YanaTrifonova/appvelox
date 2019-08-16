@@ -1157,6 +1157,13 @@ button.nav-tgl:before {
   padding-right: 20px;
 }
 
+@media (max-width: 1024px) {
+  .questions {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
 .questions__header {
   text-align: center;
   margin-bottom: 40px;
@@ -1246,10 +1253,43 @@ button.nav-tgl:before {
   line-height: 32px;
 }
 
+@media (max-width: 1024px) {
+  .aside {
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 .aside-bold {
   font-weight: bold;
 }
 
 .aside-bold:hover {
   cursor: pointer;
+}
+
+.form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.form-input {
+  border: 1px solid #dddddd;
+  padding: 13px;
+  font-size: 1.5rem;
+}
+
+.form-name {
+  margin-bottom: 20px;
+}
+
+.form-email {
+  margin-bottom: 20px;
+}
+
+.form-tel {
+  margin-bottom: 20px;
 }
