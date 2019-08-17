@@ -31,12 +31,6 @@ $(window).scroll(function (event) {
     didScroll = true;
 });
 
-setInterval(function () {
-    if (didScroll && window.pageYOffset > 500) {
-        hasScrolled();
-        didScroll = false;
-    }
-}, 20);
 
 function hasScrolled() {
     let st = $(this).scrollTop();
@@ -59,3 +53,11 @@ function hasScrolled() {
 
     lastScrollTop = st;
 }
+
+
+setInterval(function () {
+    if (didScroll && window.pageYOffset > 500) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 20);
