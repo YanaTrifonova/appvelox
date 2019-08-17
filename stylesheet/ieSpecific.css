@@ -63,6 +63,10 @@
     .situation__card__img {
         width: auto;
     }
+
+    .footer {
+        display: run-in;
+    }
 }
 
 @media screen and (max-width: 1024px) and (-ms-high-contrast: active) {
@@ -74,5 +78,9 @@
 
     .situation__card__img {
         width: auto;
+    }
+
+    .footer {
+        display: run-in;
     }
 }
