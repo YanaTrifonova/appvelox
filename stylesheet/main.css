@@ -926,6 +926,7 @@ button.nav-tgl:before {
 
 .situation__card__img {
   height: 120px;
+  width: 120px;
 }
 
 @media (max-width: 1024px) {
