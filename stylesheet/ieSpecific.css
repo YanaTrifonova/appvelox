@@ -53,7 +53,19 @@
     }
 }
 
-@media screen and (max-width: 1024px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+@media screen and (max-width: 1024px) and (-ms-high-contrast: none) {
+
+    .header__main,
+    .header__main__logo {
+        display: none;
+    }
+
+    .situation__card__img {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 1024px) and (-ms-high-contrast: active) {
 
     .header__main,
     .header__main__logo {
