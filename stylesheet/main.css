@@ -847,6 +847,8 @@ button.nav-tgl:before {
       flex-direction: row;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 @media (max-width: 1024px) {
@@ -890,7 +892,11 @@ button.nav-tgl:before {
   color: #606474;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
+  margin-right: 20px;
+}
+
+.situation__nav__roll:last-child {
+  margin-right: 0px;
 }
 
 @media (max-width: 1024px) {
