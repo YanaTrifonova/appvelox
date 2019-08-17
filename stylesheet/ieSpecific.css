@@ -71,6 +71,10 @@
     .footer {
         display: run-in;
     }
+
+    .situation__card {
+        width: auto;
+    }
 }
 
 @media screen and (max-width: 1024px) and (-ms-high-contrast: active) {
@@ -86,5 +90,9 @@
 
     .footer {
         display: run-in;
+    }
+
+    .situation__card {
+        width: auto;
     }
 }
