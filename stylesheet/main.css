@@ -1488,4 +1488,5 @@ button.nav-tgl:before {
   max-width: 400px;
   min-width: 241px;
   min-height: 44px;
+  font-family: inherit;
 }
