@@ -94,19 +94,21 @@ function modifyClasses(isAddition) {
         selector = ".howDoWeWork div[class^=\"remove-swiper-\"]"
     }
     let objs = document.querySelectorAll(selector);
-    objs.forEach((e, indRoot, arrRoot) => {
-        [].slice.apply(e.classList).forEach((p, ind, arr) => {
+    for (let i =0; i < objs.length; i++)
+    {
+        let classes = [].slice.apply(objs[i].classList);
+        for (let j = 0; j < classes.length; j++) {
             let newClass = undefined;
-            if (!isAddition && p.indexOf("remove-") !== -1) {
-                newClass = p.slice(7)
-            } else if (isAddition && p.indexOf("swiper-") !== -1) {
-                newClass = "remove-" + p
+            if (!isAddition && classes[j].indexOf("remove-") !== -1) {
+                newClass = classes[j].slice(7)
+            } else if (isAddition && classes[j].indexOf("swiper-") !== -1) {
+                newClass = "remove-" + classes[j]
             }
             if (newClass !== undefined) {
-                e.classList.add(newClass);
-                e.classList.remove(p);
+                objs[i].classList.add(newClass);
+                objs[i].classList.remove(classes[j]);
             }
-        });
-        arrRoot[indRoot] = e;
-    })
+        }
+    }
+
 }
