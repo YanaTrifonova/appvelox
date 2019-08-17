@@ -1,9 +1,9 @@
 //script for burger btn
-const menu = document.querySelector('.menu');
-const btn = menu.querySelector('.nav-tgl');
-const show = document.getElementById("header__menu");
-const header = document.getElementById("header");
-btn.addEventListener('click', evt => {
+
+function menuClick(e) {
+    const menu = document.querySelector('.menu');
+    const show = document.getElementById("header__menu");
+    const header = document.getElementById("header");
     if (menu.className.indexOf('active') === -1) {
         menu.classList.add('active');
         show.classList.add('header__menu-display');
@@ -18,7 +18,7 @@ btn.addEventListener('click', evt => {
         header.classList.remove('header-display');
         header.classList.add('header-hidden');
     }
-});
+}
 
 //script for header hide and show
 
@@ -53,7 +53,6 @@ function hasScrolled() {
 
     lastScrollTop = st;
 }
-
 
 setInterval(function () {
     if (didScroll && window.pageYOffset > 500) {
