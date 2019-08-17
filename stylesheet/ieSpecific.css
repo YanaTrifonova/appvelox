@@ -51,6 +51,10 @@
         background-color: transparent;
         border: none;
     }
+
+    .situation__card__img {
+        width: auto;
+    }
 }
 
 @media screen and (max-width: 1024px) and (-ms-high-contrast: none) {
@@ -77,7 +81,7 @@
     }
 
     .situation__card__img {
-        width: auto;
+        width: 120px;
     }
 
     .footer {
