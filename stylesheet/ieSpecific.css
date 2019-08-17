@@ -1,0 +1,46 @@
+html {
+  z-index: 0;
+  position: relative;
+}
+
+body {
+  z-index: 1;
+  position: relative;
+}
+
+main {
+  z-index: 2;
+}
+
+footer {
+  z-index: 2;
+}
+
+header {
+  z-index: 3;
+}
+
+.header__main {
+  display: none;
+  position: relative;
+  z-index: 4;
+}
+
+.header__main__logo {
+  display: none;
+}
+
+.menu .active {
+  z-index: 6;
+}
+
+.header__menu-display {
+  margin: 0 0 0 0;
+  z-index: 5;
+  position: relative;
+}
+
+.header__nav-up {
+  top: 0px;
+}
+

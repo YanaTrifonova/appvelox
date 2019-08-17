@@ -187,6 +187,7 @@ hr {
   font-size: initial;
   text-decoration: none;
   margin-left: 15px;
+  font-size: 1.6rem;
 }
 
 .header__menu__button:hover {
@@ -329,8 +330,8 @@ button.nav-tgl:before {
   -ms-grid-columns: 3fr 10px 1fr 10px 1fr;
   grid-template-columns: 3fr 1fr 1fr;
   grid-column-gap: 10px;
-  -ms-grid-rows: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-rows: (1fr)[3];
+  grid-template-rows: repeat(3, 1fr);
   width: 1000px;
   height: 150px;
 }

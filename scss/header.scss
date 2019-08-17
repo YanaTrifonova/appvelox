@@ -97,6 +97,7 @@
     &__button {
       @include button;
       margin-left: 15px;
+      font-size: 1.6rem;
 
       @media (max-width: 1280px) {
         margin: 0 auto;
