@@ -13,12 +13,22 @@
   &__header {
     text-align: center;
     margin-bottom: 40px;
+
+    @media (max-width: 1024px) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
 
   &__subscription {
     text-align: center;
     margin-bottom: 40px;
     color: $font-subscription;
+
+    @media (max-width: 1024px) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
 
   &__nav {
