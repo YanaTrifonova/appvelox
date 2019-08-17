@@ -69,6 +69,11 @@
           padding-top: 60px;
           border-right: none;
           border-bottom: 1px solid $color-medium;
+
+          @media (max-height: 530px) {
+            padding-top: 20px;
+            padding-bottom: 20px;
+          }
         }
       }
 
@@ -80,6 +85,11 @@
         @media (max-width: 1280px) {
           padding-bottom: 60px;
           padding-right: 20px;
+
+          @media (max-height: 530px) {
+            padding-top: 20px;
+            padding-bottom: 30px;
+          }
         }
       }
     }
@@ -91,6 +101,10 @@
 
       @media (max-width: 1280px) {
         padding-bottom: 30px;
+
+        @media (max-height: 530px) {
+          padding-bottom: 10px;
+        }
       }
     }
 
