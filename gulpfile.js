@@ -6,7 +6,7 @@ function css() {
     return gulp
         .src('scss/main.scss')
         .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
-        .pipe(autoprefixer())
+        .pipe(autoprefixer({grid: 'autoplace'}))
         .pipe(gulp.dest('stylesheet'))
 }
 

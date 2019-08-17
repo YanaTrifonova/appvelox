@@ -16,7 +16,7 @@
   "author": "",
   "license": "ISC",
   "browserslist": [
-    "ie > 8",
+    "ie > 9",
     "firefox > 60",
     "chrome > 70",
     "safari > 8",
